@@ -1,0 +1,21 @@
+{
+  "name": "cwebba_09",
+  "version": "1.0.0",
+  "description": "eleventy test site",
+  "main": ".eleventy.js",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cwebba1/11ty-blog-site.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@11ty/eleventy": "^1.0.0",
+    "luxon": "^2.4.0"
+  }
+}
