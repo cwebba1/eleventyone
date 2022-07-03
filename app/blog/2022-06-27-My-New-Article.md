@@ -2,7 +2,7 @@
 title: My New Article
 author: C.S. Webb
 date: 2022-06-06
-image: /assets/images/FWOGrBNWAAAlvHH.jpeg
+image: assets/images/FWOGrBNWAAAlvHH.jpeg
 imageAlt: Pride Parade
 description: there is a space
 tags: ["post", "featured"]

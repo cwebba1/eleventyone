@@ -1,6 +1,6 @@
 const { DateTime } = require("luxon");
 module.exports = function(eleventyConfig) {
-
+  
   eleventyConfig.addPassthroughCopy("./app/css");
 	//eleventyConfig.addWatchTarget("app/css");
     eleventyConfig.addPassthroughCopy("./app/assets");
@@ -9,7 +9,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addFilter("postDate", (dateObj) => {
     return DateTime.fromJSDate(dateObj).toLocaleString(DateTime.DATE_MED);
   });
-  //change resource.md to write to /resource.html
+  // This changes resource.md output to write to /resource.html
   eleventyConfig.addGlobalData("permalink", () => {
     return (data) => `${data.page.filePathStem}.${data.page.outputFileExtension}`;
   });
@@ -18,6 +18,7 @@ module.exports = function(eleventyConfig) {
       dir: {
         input: "app",
         output: "dist"
-      }
+      },
+      pathPrefix: "/"
     };
   }
