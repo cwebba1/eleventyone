@@ -19,6 +19,6 @@ module.exports = function(eleventyConfig) {
         input: "app",
         output: "dist"
       },
-      pathPrefix: "/"
+      pathPrefix: '../blog/'
     };
   }
