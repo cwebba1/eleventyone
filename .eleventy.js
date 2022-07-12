@@ -13,12 +13,26 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addGlobalData("permalink", () => {
     return (data) => `${data.page.filePathStem}.${data.page.outputFileExtension}`;
   });
+  // Default root variable:
+  // eleventyConfig.addGlobalData("root", () => "");
+  // This suggestion to slice the '/' off does not work (?)
+  const origUrlFilter = eleventyConfig.getFilter("url");
+  eleventyConfig.addFilter("url", function (url, pathPrefixOverride) {
+    const _url = origUrlFilter(url, pathPrefixOverride);
+    if (_url.startsWith("/") && !_url.startsWith("//")) {
+      return _url.slice(1);
+    }
+    return _url;
+  });
+
     // Return your Object options:
     return {
       dir: {
         input: "app",
         output: "dist"
       },
-      pathPrefix: '../blog/'
+      pathPrefix: '',
+      markdownTemplateEngine: "njk"
     };
+  
   }
