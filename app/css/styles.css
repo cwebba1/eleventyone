@@ -1,3 +1,92 @@
+@charset "UTF-8";
+:root {
+  --brite-wht:rgba(252, 253, 253, 0.99);
+  --basal-wht: rgba(253, 254, 251, 0.8);
+  --pine-wht: rgba(252, 253, 253, 0.9);
+  --old-yeller: rgba(238, 238, 221, 0.99);
+  --plum: rgba(77, 26, 59, 0.95);
+  --brd-gry: rgba(223, 222, 221, 0.99);
+  --bdr-gry: rgba(212, 206, 201, 0.99);
+  /*! NEUTRALS: */
+  --neutral-100: hsla(0, 0%, 100%, 1);
+  --neutral-200: hsla(0, 0%, 84%, 1);
+  --neutral-300: hsla(0, 0%, 76%, 1);
+  --neutral-400: hsla(0, 0%, 68%, 1);
+  --neutral-500: hsla(0, 0%, 60%, 1);
+  --neutral-600: hsla(0, 0%, 52%, 1);
+  --neutral-700: hsla(0, 0%, 44%, 1);
+  --neutral-800: hsla(0, 0%, 36%, 1);
+  --neutral-900: hsla(0, 0%, 28%, 1);
+  /*! NEUTRALS: */
+  --brand-100: hsla(180, 22%, 100%, 1);
+  --brand-200: hsla(180, 22%, 84%, 1);
+  --brand-300: hsla(180, 24%, 76%, 1);
+  --brand-400: hsla(180, 26%, 68%, 1);
+  --brand-500: hsla(180, 28%, 60%, 1);
+  --brand-600: hsla(180, 30%, 52%, 1);
+  --brand-700: hsla(180, 32%, 44%, 1);
+  --brand-800: hsla(180, 32%, 36%, 1);
+  --brand-900: hsla(180, 32%, 28%, 1);
+  /*! BROWNS: */
+  --hdr-brn: rgba(51, 23, 0, 0.7);
+  --bdy-brn: rgba(36, 16, 0, 0.99);
+  --dk-dk--brn: rgba(33, 16, 0, 0.99);
+  --chocolate-brn: rgba(68, 51, 34, 0.99);
+  --left-rib:#AB8677;
+  --tan-txt:rgba(133, 116, 100, 1);
+  --tan-txt-dk:rgba(110, 92, 77, 0.99);
+  --hdr-brn:rgba(140, 65, 3, 0.99);
+  /*! GREENS: */
+  --bdy-grn: hsl(127, 100%, 15%, 0.99);
+  --celadon: rgba(187, 221, 204, 0.99);
+  --celadrk:rgba(169, 198, 184, 0.99);
+  --celadeep:rgba(123, 173, 148, 0.99);
+  --accidental-grn: rgba(127, 237, 218, 0.99);
+  --golf-green:rgba(43, 140, 92, 0.99);
+  --acid-grn:rgba(234, 255, 234, 1);
+  --wasabi:rgba(207, 230, 207, 1);
+  --shhh:hsla(180, 22%, 90%, 0.91);
+  /*! COLORS FOR SOCIAL MEDIA ICONS (022119) */
+  --old-grass:rgba(182,214,182, 0.99);
+  --tea-grass:rgba(221,239,210, 0.5);
+  --lemon-grass:rgba(237,255,226, 0.5);
+  /*! GREEN-BLUES: */
+  --cape-cod-blu:rgba(34,136,170, 0.99);
+  --tagblu:rgba(0, 136, 204, 0.99);
+  --arrow-circle:rgba(147, 198, 240, 0.99);
+  /* A-link Blues */
+  --midnight-blue:rgba(0, 68, 119, 0.99);
+  --royal-blu:rgba(0, 102, 204, 0.99);
+  --visitation-blu:rgba(51, 153, 204, 0.99);
+  --blu-moon:rgba(132, 164, 189, 0.99);
+  --daylight-blu:rgba(95, 193, 241, 0.99);
+  /*! ORANGE */
+  --pumpkin:rgba(230, 102, 45, 0.99);
+  --orange-lt:rgba(255, 153, 102, 0.99);
+  /*! REDS */
+  --blood:rgba(144, 0, 0, 0.99);
+  --redskin:rgba(172, 52, 21, 0.99);
+  /*! CWebba08 Prototyping Colors: */
+  --proto-pink: rgba(255, 222, 221, 0.99);
+  --proto-wht: rgba(254, 253, 250, 0.99);
+  --proto-blu: rgba(206, 239, 239, 0.99);
+  --grrly-grn: rgba(175, 223, 199, 0.99);
+  --juju-blu: rgba(188, 222, 250, 0.99);
+  --mustard: rgba(218, 180, 82, 0.99);
+  /* iframe and gradient colors go here */
+  /*! ICON Colors: */
+  --codepen: #000000;
+  --linkedin: #0077B5;
+  --twitter: #1DA1F2;
+  --github: #181717;
+  --behance: #1769FF;
+  --flickr: #0063DC;
+  --instagram: #E4405F;
+  --facebook: #3B5998;
+  --angellist: #000000;
+  --dribbble: #EA4C89;
+}
+
 :root {
   --fs-300: 0.9375rem;
   --fs-400: 1.0625rem;
@@ -5,7 +94,7 @@
   --fs-600: 1.875rem;
   --fs-700: 2rem;
   --ff-body: "Roboto", sans-serif;
-  --ff-heading: "Playfair Display", serif;
+  /*  --ff-heading: "Playfair Display", serif;*/
   --fw-400: 400;
   --fw-700: 700;
   --fw-900: 900;
@@ -29,6 +118,46 @@
     --fs-700: 3rem;
   }
 }
+/** –cwebba-vars.scss */
+:root {
+  --fs-300: 0.9375rem;
+  --fs-400: 1.0625rem;
+  --fs-500: 1.375rem;
+  --fs-600: 1.875rem;
+  --fs-700: 2rem;
+  --ff-body: "Roboto", sans-serif;
+  font-style: normal;
+  --ff-heading: "Lora", serif;
+  --fw-1: 100;
+  --fw-2: 200;
+  --fw-3: 300;
+  --fw-4: 400;
+  --fw-5: 500;
+  --fw-6: 600;
+  --fw-7: 700;
+  --fw-8: 800;
+  --fw-9: 900;
+  --font-letterspacing-0: -.05em;
+  --font-letterspacing-1: .025em;
+  --font-letterspacing-2: .050em;
+  --font-letterspacing-cwebba: 0.0625em;
+  --font-letterspacing-3: .075em;
+  --font-letterspacing-4: .150em;
+  --font-letterspacing-5: .500em;
+  --font-letterspacing-6: .750em;
+  --font-letterspacing-7: 1em;
+  --typography-spacing-vertical: calc(1em + 0.5rem);
+  --brand: var(--golf-green);
+}
+
+:where(html) {
+  --font-sans: "Roboto", "Open Sans", system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans, Arial, "Helvetica Neue", Helvetica,sans-serif;
+  --font-serif: "Lora", ui-serif,serif;
+  --font-brand-sans: "Ubuntu", Verdana, "Corbel", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+  --font-mono: Dank Mono,Operator Mono,Inconsolata,Fira Mono,ui-monospace,SF Mono,Monaco,Droid Sans Mono,Source Code Pro,monospace;
+  --rem:1rem;
+}
+
 /* //////////////////////
   RESET - source: https://piccalil.li/blog/a-modern-css-reset
   /////////////////////// */
@@ -116,14 +245,14 @@ body {
   color: var(--clr-neutral-900);
 }
 
-h1,
-h2,
-h3 {
-  font-family: var(--ff-heading);
-  font-weight: var(--fw-900);
-  line-height: 1.1;
-}
-
+/*  h1,
+  h2,
+  h3 {
+    font-family: var(--ff-heading);
+    font-weight: var(--fw-900);
+    line-height: 1.1;
+  }
+*/
 em {
   font-weight: 600;
 }
@@ -360,6 +489,85 @@ section,
 .btn--neutral:focus {
   color: var(--clr-neutral-100);
   background-color: var(--clr-neutral-900);
+}
+
+/** _cwebba-base-01 */
+/** typgraphy */
+.article-title,
+.section-title {
+  color: var(--brand-700); /*var(--clr-primary-500);*/
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--ff-heading);
+  font-weight: var(--fw-6);
+  line-height: 1.1;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  font-style: italic;
+  font-weight: var(--fw-6);
+  color: var(--brand);
+  color: #458787;
+  letter-spacing: var(--font-letterspacing-2);
+  font-family: var(--font-serif);
+}
+
+h1 {
+  font-size: calc(var(--rem) * 2);
+  line-height: var(--typography-spacing-vertical);
+}
+
+h2 {
+  font-size: calc(var(--rem) * 1.75);
+  /*    --typography-spacing-vertical: 2.625rem; */
+  line-height: var(--typography-spacing-vertical);
+}
+
+h3 {
+  font-size: calc(var(--rem) * 1.5);
+  line-height: var(--typography-spacing-vertical);
+  /*      --typography-spacing-vertical: 2.25rem;*/
+}
+
+h4 {
+  --font-size: 1.25rem;
+  font-size: calc(var(--rem) * 1.25);
+  /*  --typography-spacing-vertical: 1.874rem;*/
+  line-height: var(--typography-spacing-vertical);
+}
+
+h5 {
+  font-size: calc(var(--rem) * 1.125);
+  line-height: var(--typography-spacing-vertical);
+}
+
+h6 {
+  font-size: 1rem;
+  line-height: var(--typography-spacing-vertical);
+}
+
+.logo-box-head {
+  width: 12em;
+}
+
+.logo-box-footer {
+  max-width: 23em;
+  margin: auto;
+}
+
+/* //////////////////////
+  Footer
+  /////////////////////// */
+.site-footer {
+  --logo-color: currentColor;
+  padding: 2em 0;
+  color: var(--neutral-600);
+  background-color: var(--shhh); /*--clr-primary-500*/
+  text-align: center;
 }
 
 /*# sourceMappingURL=styles.css.map */

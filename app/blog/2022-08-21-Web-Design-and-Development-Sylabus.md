@@ -1,28 +1,33 @@
 ---
-title: Web Development Syllabus
+title: Web Design and Development Sylabus
 author: Craig Webb
-date: 2022-07-12
+date: 2022-07-23
+tags: ['post', 'featured']
 image: assets/images/Francisco_de_Goya_y_Lucientes_-_Witches'_Sabbath_(The_Great_He-Goat).jpg
 imageAlt: Goya  Le Sabbat des sorcières, ou Le Grand Bouc (El gran cabron). 1819-1823
-description: This Web Design and Development Syllabus is a description of subject matter to be taught in a college-level class. The Syllabus is for an introductory overview to web design and development and an advanced level class.
-tags: ["post", "featured"]
+description: This Sylabus is a list of web development techniques and tools that I would teach in a series of college level classes.  
+templateEngineOverride: njk,md
 ---
+## Web Design and Development Sylabus
 
-## Web Design and Development Syllabus
+This Sylabus is a list of web development techniques and tools that I would teach in a series of college level classes. 
 
 HTML / CSS  
+new HTML / CSS
 Intro to JavaScript  
+SASS  
 Codepen  
 GIT and Github  
 WordPress, WordPress Themes, plugins and shortcodes  
-Javascript templating, Gulp and Eleventy, Netify
 Backend programming, MySql  
+Javascript templating, Gulp 
+Eleventy, Netify
 Node and NPM  
 SVG, animation  
 Advanced edge-case HTML / CSS  
-SASS  
 Bootstrap and other libraries, frameworks  
 Design Systems, Theory of Design Systems  
 Figma, Storybook, observable  
 Agile workflow  
 More about User Experience Design
+    
