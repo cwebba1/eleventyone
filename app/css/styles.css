@@ -570,4 +570,7 @@ h6 {
   text-align: center;
 }
 
+@media(max-width:600px){
+  figure{width:100%!important;}
+}
 /*# sourceMappingURL=styles.css.map */
