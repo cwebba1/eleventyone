@@ -3,9 +3,9 @@ title: Happy Birthday
 author: Craig Webb
 date: 2023-06-06
 tags: ['post', 'featured']
-image: assets/images/Brother's-Sausage-1983.jpeg
+image: assets/images/Brothers-Sausage-1983.jpeg
 imageAlt: Brother's Sausage, 1983
-description: Happy Birthday
+description: Happy Birthday Wade
 templateEngineOverride: njk,md
 ---
 ### Happy Birthday

@@ -1,0 +1,18 @@
+{% include "htmlhead.njk" %}
+    {%include 'header.njk'%}
+<main>
+    <article class="main-article">
+<div class="container container--narrow flow">
+
+{% block content %}
+
+  <h1>{{ title }}</h1>
+
+  {{ content | safe }}
+
+{% endblock %}
+</div>
+</article>
+</main>
+    {%include 'footer.njk'%}
+{% include "htmlfoot.njk" %}

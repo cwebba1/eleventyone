@@ -5,7 +5,7 @@ date: 2022-07-20
 tags: ['post', 'featured']
 image: assets/images/Little-Boy-Lost_1920_Dorothy-Lathrop.jpeg
 imageAlt: Little Boy Lost, 1920, by Dorothy Lathrop
-description: Eleventy is a tjavascript-based templating system gaining tracktion in the web development comunity. It is facile, fast and flexible. 
+description: Eleventy is a JavaScript-based templating system gaining traction in the web development community. It is facile, fast and flexible. 
 ---
 
 <h3>What you love is what you do</h3>

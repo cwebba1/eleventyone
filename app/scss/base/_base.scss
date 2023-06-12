@@ -1,21 +1,27 @@
 /* //////////////////////
   General styling
   /////////////////////// */
+/*
+  html{
+    font-size:18px;
+  }
 
   body {
     font-family: var(--ff-body);
-    font-size: var(--fs-400);
+    font-size: var(--fs-500);
     color: var(--clr-neutral-900);
   }
-  
-/*  h1,
+
+  h1,
   h2,
   h3 {
     font-family: var(--ff-heading);
     font-weight: var(--fw-900);
     line-height: 1.1;
+    letter-spacing: -2px;
+
   }
-*/  
+
   em {  font-weight: 600;
   }
   
@@ -27,8 +33,7 @@
   .section {
     padding: min(10vh, 10em) 0;
   }
-  
-  
+    */
   
   /* //////////////////////
     Utility Classes
@@ -37,7 +42,7 @@
   /* select all direct childen of .flow
      and add margin to the top for proper
      spacing */
-  
+/*  
   .flow > *:where(:not(:first-child)) {
     margin-top: var(--flow-spacer, 1em);
   }
@@ -61,12 +66,12 @@
   .text-center {
     text-align: center;
   }
-  
+  */
   /* typgraphy */
-  
+/*  
   .article-title,
   .section-title {
-    color: var(--clr-primary-500);
+    color: var(--clr-primary-140);
   }
   
   .article-title {
@@ -77,11 +82,11 @@
     font-size: var(--fs-600);
   }
   
-  
+*/  
   /* //////////////////////
     Header
     /////////////////////// */
-  
+/*  
   .page-header {
     padding: 2em 0;
   }
@@ -103,26 +108,28 @@
   
   .nav-list a:focus,
   .nav-list a:hover {
-    color: var(--clr-primary-400);
+    color: var(--clr-primary-080);
     text-decoration: underline;
   }
-  
+*/  
   /* //////////////////////
     Footer
     /////////////////////// */
   
-  .site-footer {
+/*  .site-footer {
     --logo-color: currentColor;
     padding: 2em 0;
     color: var(--clr-neutral-100);
-    background-color: var(--clr-primary-500);
-    text-align: center;
+background-color: var(--clr-primary-070);
+text-align: center;
   }
+*/  
+/*    background-color: var(--clr-primary-100); */
   
   /* //////////////////////
     Homepage
     /////////////////////// */
-  
+/*  
   .hero > div {
     display: grid;
     grid-auto-flow: row;
@@ -133,7 +140,6 @@
   
   .hero__image {
     width: 100%;
-    /* max-height: max(15rem, 40vh); */
     object-fit: cover;
   }
   
@@ -144,18 +150,20 @@
   }
   
   .featured-articles {
-    background-color: var(--clr-primary-200);
+    background-color: var(--clr-primary-010);
   }
   
   .articles__list {
     --flow-spacer: 3rem;
     margin: 6rem 0;
   }
-  
+  */
+      /* .hero__image { max-height: max(15rem, 40vh); */
+
   /* //////////////////////
     Individual article page
     /////////////////////// */
-  
+/*  
     .main-article {
       margin-bottom: 3rem;
     }
@@ -165,11 +173,11 @@
       font-size: var(--fs-300);
       opacity: .9;
     }
-  
+*/  
   /* //////////////////////
     Article snippets
     /////////////////////// */
-  
+/*  
   .snippet {
     display: grid;
     gap: 1em;
@@ -187,6 +195,7 @@
     aspect-ratio: 4 / 3;
     object-fit: cover;
   }
+
   .snippet__title {
     grid-area: title;
   }
@@ -204,7 +213,7 @@
   }
   
   .snippet__title {
-    color: var(--clr-neutral-900);
+    color: var(--clr-primary-110);
     font-size: var(--fs-500);
   }
   
@@ -215,7 +224,7 @@
   
   .snippet__title a:hover,
   .snippet__title a:focus {
-    color: var(--clr-primary-500);
+    color: var(--clr-primary-130);
   } 
   
   @media (min-width: 45em) {
@@ -225,7 +234,7 @@
         "meta image"
         "body image"
         "button image";
-      grid-column-gap: 4em;
+      grid-column-gap: 3em;
       grid-template-columns: 1fr 40%;
       grid-template-rows: min-content min-content min-content 1fr;
     }
@@ -243,20 +252,20 @@
   }
   
   .btn:focus {
-    outline: 0.125em solid var(--clr-primary-400);
+    outline: 0.125em solid var(--clr-primary-160);
     outline-offset: 0.25em;
   }
   
   .btn--primary {
-    background: var(--clr-primary-400);
+    background: var(--clr-primary-120);
     color: var(--clr-neutral-100);
     font-weight: var(--fw-700);
-    border: 2px solid var(--clr-primary-400);
+    border: 2px solid var(--clr-primary-110);
   }
   .btn--primary:hover,
   .btn--primary:focus {
-    background: var(--clr-primary-500);
-    border-color: var(--clr-primary-500); 
+    background: var(--clr-primary-130);
+    border-color: var(--clr-primary-090); 
   }
   
   .btn--neutral {
@@ -271,3 +280,4 @@
     color: var(--clr-neutral-100);
     background-color: var(--clr-neutral-900);
   }
+  */

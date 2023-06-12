@@ -52,17 +52,9 @@
 		V22.304z"/>
 </g></a>
 </svg></figure>
-      <nav>
-        
-        <ul role="list" class="nav-list flex-group">
-          <li>
-            <a href="{{ root }}{{ '/index.html' | url }}">Home</a>
-          </li>
-          <li>
-            <a href="{{ root }}{{ '/blog.html' | url }}">Blog</a>
-          </li>
-                  </ul>
-      </nav>
+  <nav>
+    {{ collections.all | eleventyNavigation | eleventyNavigationToHtml | safe }}
+  </nav>
     </div>
   </div>
 </header>

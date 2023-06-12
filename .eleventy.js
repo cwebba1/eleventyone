@@ -2,6 +2,7 @@ const { DateTime } = require("luxon");
 const Image = require('@11ty/eleventy-img');
 const path = require('path');
 const outdent = require('outdent');
+const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 async function imageShortcode(src, alt) {
   let sizes = "(min-width: 1024px) 100vw, 50vw"
   let srcPrefix = `assets/images/`
@@ -42,6 +43,8 @@ async function imageShortcode(src, alt) {
 }
 
 module.exports = function(eleventyConfig) {
+  // 061123 Navigation Plugin
+  eleventyConfig.addPlugin(eleventyNavigationPlugin);
   eleventyConfig.addNunjucksAsyncShortcode("image", imageShortcode)
   // Watch CSS files for changes
   eleventyConfig.setBrowserSyncConfig({
