@@ -9,14 +9,12 @@ description: Eleventy is a tjavascript-based templating system gaining tracktion
 templateEngineOverride: njk,md
 ---
 
-## eleventy-image-shortcode-test. 
-
 ## This is a test of the image plugin.
 
 William Gale Gedney.1932-1989. Porch Light. Leatherwood Kentucky,1964  
 
 
-As of right now – 072422 – This test in failing. At the end of the 072322 session I pulled code for the Eleventy Image Plugin out of .eleventy.js and the image shortcode that belongs on this page.
+As of right now – 072422 – This test is failing. At the end of the 072322 session I pulled code for the Eleventy Image Plugin out of .eleventy.js and the image shortcode that belongs on this page.
 
 <figure style="width: 12em; float:left; margin-right:1em;">
 <image src="{{root}}assets/images/Edward-Bainbridge-Copnall_1934.png" alt="Edward Bainbridge Copnall" style="(min-width: 30em) 50vw, 100vw; float:left;">

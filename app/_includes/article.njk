@@ -9,7 +9,7 @@ layout: 'base.njk'
     <h1 class="article-title">
       {{ title }}
     </h1>
-  <p><span class="snippet__meta">{{ post.data.author }}</span> <span class="snippet__meta">on {{ page.date | postDate }}</span></p>
+  <p><span class="snippet__meta">{{ post.data.author }}</span> <span class="snippet__meta"> {{ page.date | readableDate }}</span></p>
     <figure class="main-article__figure">
       <img src="../{{image}}" alt="{{imageAlt}}">
       <figcaption>

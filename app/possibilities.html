@@ -1,0 +1,19 @@
+---
+title: New Possibilities
+layout: 'base.njk'
+eleventyNavigation:
+  key: Possibilities
+  order: 400
+---
+<div class="section container">
+<h1 class="section-title">Recent articles</h1>
+
+<ul role="list" class="postgrid__list">
+{%- for post in collections.post reversed -%}
+{% include 'postgrid-snippet.njk' %}
+{%- endfor -%}
+</ul>
+
+  </div>
+
+

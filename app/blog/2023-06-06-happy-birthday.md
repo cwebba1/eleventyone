@@ -9,7 +9,8 @@ description: Happy Birthday Wade
 templateEngineOverride: njk,md
 ---
 ### Happy Birthday
-{{ page.date.toUTCString() }}
+{{ page.date | readableDate }} <br> 
+
 Today is my brother Wade's birthday. I am waiting to send a "happy Birthday" txt message to him. Wade is in Pasadena California and I am in New York City. It is still too early to txt to California.
 
 Wade has been deathly ill and I am quite concerned. He txt'd to me on a Saturday afternoon two weeks ago that he was in the hospital, about to go into emergency surgery. 
