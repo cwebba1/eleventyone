@@ -18,8 +18,8 @@ Wade's "Fiancée" Shannon is an Internet catfisher. The social worker told me th
 I am wondering how I can make that happen.
 
 <figure style="width: 24em; float:left; margin-right:1em;">
-<image src="{{root}}assets/images/And-Life-Goes-On-1992.jpeg" alt="And Life Goes On (1992)" style="(min-width: 30em) 50vw, 100vw; float:left;">
-<figcaption>And Life Goes On (1992)</figcaptions>
+<img src="{{root}}assets/images/And-Life-Goes-On-1992.jpeg" alt="And Life Goes On (1992)" style="(min-width: 30em) 50vw, 100vw; float:left;">
+<figcaption>And Life Goes On (1992)</figcaption>
 </figure>
 
 I called Wade's ex-wife Diane. I got a rumor yesterday that Wade had told her to fuck off when she went to a second visit. It turns out he did. She was offering to take care of Wade when he got out. Diane bitched at me for 45 minutes about how he mistreated her and how much she had done for Wade over 30 years.
