@@ -1,4 +1,4 @@
-//This is not working 061823. Removing for replacement.
+//062623 Luxon now works for dateTime.
 const { DateTime } = require("luxon");
 const Image = require('@11ty/eleventy-img');
 const path = require('path');
@@ -46,15 +46,6 @@ async function imageShortcode(src, alt) {
 }
 
 module.exports = function(eleventyConfig) {
-  // 2nd version - eleventyConfig Format date
-  //This is not working 061823. Removing for replacement.
-//  eleventyConfig.addFilter("formatDate", (dateObj, fmt = 'DDDD') => {
-//    return DateTime.fromJSDate(dateObj).toFormat(fmt)
-//  };
-  // 1st version - eleventyConfig Format date
-//  eleventyConfig.addFilter("postDate", (dateObj) => {
-//    return DateTime.fromJSDate(dateObj).toLocaleString(DateTime.DATE_MED);
-//  });
 
   // --- Filter for Luxon --- taken from v8 starter
   eleventyConfig.addFilter("readableDate", (dateObj, format, zone) => {
@@ -65,13 +56,16 @@ module.exports = function(eleventyConfig) {
     return dt;
 	});
 
-	//eleventyConfig.addFilter('htmlDateString', (dateObj) => {
-		// dateObj input: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string
-	//	return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat('yyyy-LL-dd');
-	//});
 
   // 061123 Navigation Plugin
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
+
+  /* --- SHORTCODES --- */
+
+  // page navigation. This path works 062623
+  eleventyConfig.addShortcode('navlist', require('./app/lib/shortcodes/navlist.js'));
+
+
   eleventyConfig.addNunjucksAsyncShortcode("image", imageShortcode)
   // Watch CSS files for changes
   eleventyConfig.setBrowserSyncConfig({

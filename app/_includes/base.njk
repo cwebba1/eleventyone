@@ -20,8 +20,14 @@
 </head>
 <body>
     {%include 'header.njk'%}
-    <main>   
+    <main> 
+{% block content %}
+  <h1>{{ title }}</h1>
+
     {{content | safe}}
+    {% include "pagelist.njk" %}
+{% endblock %}
+
     </main>   
     {%include 'footer.njk'%}
 </body>
