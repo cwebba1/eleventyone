@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en_US">
 <head>
-    <title>Eleventy is my new jam(stack)</title>
+    <title>Sass Build Systems fail Sass variables – Help!</title>
       <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="Content-Language" content="en-us" />
@@ -12,7 +12,7 @@
 
   <meta name="author" content="Craig Webb">
   <meta name="description" content="Craig Webb Art – Communications design auxillary website for portfolio and blogs.">
-  <meta name="description" content="Eleventy is a JavaScript-based templating system gaining traction in the web development community. It is facile, fast and flexible.">
+  <meta name="description" content="My multiple build systems for SASS fail to process Sass variables and mixins. I describe the issue and ask for help.">
 
   <link rel="icon" href="https://www.craigwebbart.com/favicon-32x32.png" type="image/svg+xml" />
 
@@ -98,7 +98,7 @@
 </header>
     <main> 
 
-<!--  <h1>Eleventy is my new jam(stack)</h1> -->
+<!--  <h1>Sass Build Systems fail Sass variables – Help!</h1> -->
 
     
        
@@ -106,36 +106,278 @@
 <div class="container container--narrow flow">
   
     <h1 class="article-title">
-      Eleventy is my new jam(stack)
+      Sass Build Systems fail Sass variables – Help!
     </h1>
-  <p><span class="snippet__meta"></span> <span class="snippet__meta"> Wednesday, July 20, 2022</span></p>
+  <p><span class="snippet__meta"></span> <span class="snippet__meta"> Sunday, July 9, 2023</span></p>
     <figure class="main-article__figure">
-      <img src="../assets/images/Little-Boy-Lost_1920_Dorothy-Lathrop.jpeg" alt="Little Boy Lost, 1920, by Dorothy Lathrop">
+      <img src="../assets/images/Margaret-C-Cook_illustration_1913-Walt-Whitman_Leaves-of-Grass.jpeg" alt="An illustration by Margaret C. Cook for a 1913 edition of Walt Whitman’s Leaves of Grass.">
       <figcaption>
-        Little Boy Lost, 1920, by Dorothy Lathrop
+        An illustration by Margaret C. Cook for a 1913 edition of Walt Whitman’s Leaves of Grass.
       </figcaption>
     </figure>
-<h3>What you love is what you do</h3>
-Recently a spiritual advisor within my creative circle spoke about doing work that you love. The idea occurred to me to consider what I choose to be doing and how that reflects my passion.
-<p>Recently I have taken a deep dive into learning the in's and out's of a program named Eleventy. I've studied tutorials and parsed documentation and put a sustained effort into getting it working.</p>
-<h3>History</h3>
-Eleventy was first published approximately December, 2017.  Eleventy began to be noticed and talked about by a certain core of web mavens who I follow on Twitter. 
-<p>Intrigued by the buzz, I took a stab at embracing Eleventy a couple of years ago. I wasn't able to invest the time to work through side issues and get it working and so I set it aside.</p>
-<p>This year I invested many days into getting Eleventy into my tool belt.</p>
-<p>Eleventy is a JavaScript method of templating websites. It generates static HTML page output and can handle data and functions. The important distinction about programs like Eleventy is that it builds static files on the server.</p>
-<p>A comparison most people will know is with WordPress, a php system that is employed to build 25% of websites today. The difference is that WordPress compiles templates on the server but builds the pages on the client.</p>
-<p>WordPress is built with php. WordPress code is often bulky and ugly and because it is building pages across the Internet, WordPress has some security risks.</p>
-<p>A static website builder named Jekyll, built in Ruby, launched in 2008. It became popular as a way to build websites housed on Github, a social media website for sharing programs and code.</p>
-<p>For many years developers have sought ways to compile website templates using JavaScript instead. JavaScript templating gained interest many years ago. Programs like Mustache and Handlebars led the way. JavaScript templating is now built into popular modern frameworks such as AngularJS and React.</p>
-<p>My business website is built using Gulp and Handlebars. To be honest it seems to me that working with Eleventy is very similar to working with Gulp &amp; Handlebars.</p>
- <h3>The new now</h3>
-Many developers are doing amazing things with Eleventy now. It is possible to implement additional programs such as React or Vue and connect Eleventy to third-party APIs.
-<p>As the platform matures people are building additional components and APIs that add extra functionality.</p>
-<p>What is most attractive to me is the ability to build complete design systems. There is no reason why very large enterprise systems cannot be built upon the Eleventy platform.</p>
-<h3>A mirror to my soul</h3>
-What I see about myself is that while I could devote time to learning other things, I am attracted to this kind of web development. I am a man who wants to know the code. I want to have the means of production under my thumb.
-<p>Eleventy is not on the radar of career recruiters. I do not see job descriptions asking for Eleventy skills. But I like building the structure of websites. The people in the know, know. I see template scaffolding as valuable, along with building simple and effective CSS cascades and writing with concise searchable phrases.</p>
-<p>When a client comes to me I am capable of building their brand, content, assets and a scalable website capable of growing with their business. Eleventy will be a part of my soup-to-nuts development work-flow.</p>
+<p>I am working on an introduction to CSS Trigonometry tutorial by Kevin Powell.
+https://youtu.be/eO33Rh3GFGk</p>
+<p>Everything works until the end of the tutorial where Kevin Powell demonstrates a Sass mixin to automatically process a series of CSS declarations.</p>
+<p>I get an error that looks like this:<br></p>
+<pre>
+<code>
+Error: Undefined variable.
+	|
+171	|	.circle:nth-of-type(#{$i + 1}) {
+	|			      ^^
+	|
+  src/scss/trig.scss 171:27	root stylesheet
+</code>
+</pre>
+<p>I tracked down a live example of Kevin Powell's code example on Codepen here:
+https://codepen.io/kevinpowell/pen/qBMQJVr</p>
+<p>The exact same code works on his CodePen file.
+Reading CodePen documentation, I found a Sass testing playground at https://www.sassmeister.com/. Kevin Powell's code also compiles correctly there.</p>
+<p>Therefor there must be a defect with my build system(s). I tested three.</p>
+<p>I tested two development systems that use Gulp and one build system for Eleventy that does not use Gulp. All three give the same Undefined variable error.</p>
+<p>My Sass build systems successfully process Sass partials and compile them to CSS. They are failing to process Sass mixins and variables.</p>
+<p>I will list the package.json contents and pertinent portions of the three development systems below. My question is what are the differences between these build systems and CodePen or Sassmeister where Sass mixins and variables fail to process?</p>
+<pre>
+<code>
+ - – - – - – - – - – - – - – - – - – - – - – - – - – - – - – - –
+
+Eleventy Package.json:
+ - – - – - – - – - – - – - – - –
+{
+  "name": "cwebba_09",
+  "version": "1.0.0",
+  "description": "eleventy test site",
+  "main": ".eleventy.js",
+  "scripts": {
+    "watch:sass": "sass --watch app/scss:app/css",
+    "build:sass": "sass app/scss:app/css",
+    "watch:eleventy": "eleventy --serve",
+    "start": "npm-run-all build:sass --parallel watch:*",
+    "build:eleventy": "eleventy",
+    "build": "npm-run-all build:*",
+    "debug": "DEBUG=* eleventy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cwebba1/11ty-blog-site.git"
+  },
+  "bugs": {
+    "url": "https://github.com/cwebba1/11ty-blog-site/issues"
+  },
+  "keywords": [],
+  "author": "Craig Webb",
+  "email": "cwebba1@gmail.com",
+  "license": "MIT",
+  "dependencies": {
+    "@11ty/eleventy": "^2.0.1",
+    "luxon": "^2.5.2",
+    "markdown-it": "^13.0.1",
+    "markdown-it-anchor": "^8.6.4",
+    "nunjucks": "^3.2.3"
+  },
+  "devDependencies": {
+    "@11ty/eleventy-img": "^2.0.1",
+    "@11ty/eleventy-navigation": "^0.3.5",
+    "npm-run-all": "^4.1.5",
+    "outdent": "^0.8.0",
+    "sass": "^1.53.0"
+  }
+}
+
+.eleventy.js Config File:
+ - – - – - – - – - – - – - – - –
+
+const { DateTime } = require("luxon");
+const Image = require('@11ty/eleventy-img');
+const path = require('path');
+const outdent = require('outdent');
+const eleventyNavigationPlugin = require('@11ty/eleventy-navigation');
+. . . 
+module.exports = function(eleventyConfig) {
+. . .
+  eleventyConfig.addNunjucksAsyncShortcode("image", imageShortcode)
+  // Watch CSS files for changes
+  eleventyConfig.setBrowserSyncConfig({
+		files: './app/css/**/*.css'
+	});
+  eleventyConfig.addWatchTarget("./app/scss/");
+  eleventyConfig.addPassthroughCopy("./app/css");
+	//eleventyConfig.addWatchTarget("app/css");
+    eleventyConfig.addPassthroughCopy("./app/assets");
+	//eleventyConfig.addWatchTarget("app/assets");
+
+  // This changes resource.md output to write to /resource.html
+  eleventyConfig.addGlobalData("permalink", () => {
+    return (data) => `${data.page.filePathStem}.${data.page.outputFileExtension}`;
+  });
+  // Default root variable:
+  // eleventyConfig.addGlobalData("root", () => "");
+  // This suggestion to slice the '/' off does not work (?)
+  const origUrlFilter = eleventyConfig.getFilter("url");
+  eleventyConfig.addFilter("url", function (url, pathPrefixOverride) {
+    const _url = origUrlFilter(url, pathPrefixOverride);
+    if (_url.startsWith("/") && !_url.startsWith("//")) {
+      return _url.slice(1);
+    }
+    return _url;
+  });
+
+    // Return your Object options:
+    return {
+      dir: {
+        input: "app",
+        output: "dist"
+      },
+//      pathPrefix: '',
+      markdownTemplateEngine: "njk"
+    };
+  
+  }
+</code>
+</pre>
+<ul>
+<li>– - – - – - – - – - – - – - – - – - – - – - – - – - – - – - –<br></li>
+</ul>
+<pre>
+<code>
+Parallax Build System:
+– Runs on NPM only, no Gulp file
+
+SOURCE:
+https://thinkdobecreate.com/articles/minimum-static-site-sass-setup/
+Stephanie Eckles
+Minimum Static Site Setup with Sass
+Feb 19, 2022
+
+Package.json:
+ - – - – - – - – - – - – - – - –
+{
+    "name": "project",
+    "version": "0.1.0",
+    "description": "SASS compile|autoprefix|minimize and live-reload dev server using Browsersync for static HTML",
+    "main": "public/index.html",
+    "author": "5t3ph",
+    "scripts": {
+      "build:sass": "sass  --no-source-map src/sass:public/css",
+      "copy:html": "copyfiles -u 1 ./src/*.html public",
+      "copy:images": "copyfiles -u 1 ./src/assets/images/**.* public",
+      "copy": "npm-run-all --parallel copy:*",
+      "watch:html": "onchange 'src/*.html' -- npm run copy:html",
+      "watch:images": "onchange 'src/assets/images/**.*' -- npm run copy:images",
+      "watch:sass": "sass --watch src/scss:public/css",
+      "watch": "npm-run-all --parallel watch:*",
+      "serve": "browser-sync start --server public --files public",
+      "start": "npm-run-all copy --parallel watch serve",
+      "build": "npm-run-all copy:html build:*",
+      "postbuild": "postcss public/css/*.css -u autoprefixer cssnano -r --no-map"
+    },
+    "dependencies": {
+      "autoprefixer": "^10.4.2",
+      "browser-sync": "^2.27.7",
+      "copyfiles": "^2.4.1",
+      "cssnano": "^5.0.17",
+      "npm-run-all": "^4.1.5",
+      "onchange": "^7.1.0",
+      "postcss-cli": "^9.1.0",
+      "sass": "^1.49.8"
+    }
+  }
+  </code>
+</pre>
+<ul>
+<li>– - – - – - – - – - – - – - – - – - – - – - – - – - – - – - –<br></li>
+</ul>
+<pre>
+<code>
+Starter-Gulp-SASS-2023
+– Created 011323 from Kevin Powell Github Repo ca Jun 26, 2019
+– Updated with NPM modules and Gulpfile.js code from Gulp_2022
+
+Package.json:
+ - – - – - – - – - – - – - –
+{
+  "name": "sass-starter-project",
+  "version": "1.0.0",
+  "description": "2023 Gulp / SASS Build",
+  "main": "index.js",
+  "scripts": {
+    "build": "gulp css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Craig Webb Art",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^10.4.12",
+    "browser-sync": "^2.27.10",
+    "gulp": "^4.0.2",
+    "gulp-postcss": "^9.0.1",
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "postcss": "^8.4.18",
+    "sass": "^1.62.0"
+  },
+  "dependencies": {
+    "postcss-preset-env": "^7.8.2"
+  },
+  "browserslist": [
+    "defaults"
+  ]
+}
+
+Gulpfile.js
+ - – - – - – - – - – - – - –
+
+const gulp = require("gulp");
+const sass = require('gulp-sass')(require('sass'));
+const sourcemaps = require("gulp-sourcemaps");
+const autoprefixer = require("autoprefixer");
+const postcss = require('gulp-postcss');
+const postcssPresetEnv = require('postcss-preset-env');
+const { src, dest, watch, series, parallel } = require('gulp');
+const browserSync = require("browser-sync").create();
+
+function browser_sync(){
+  browserSync.init({
+      watch: true,
+      server: "./dist"
+  })
+  };
+  
+const sassOptions = {
+  outputStyle: "expanded"
+};
+
+// compile scss into css
+
+function style() {
+  const sassOptions = {
+    errLogToConsole: true,
+    outputStyle: 'expanded'
+  };
+return src("./scss/**/*.scss")
+    .pipe(sourcemaps.init())
+    .pipe(sass(sassOptions).on("error", sass.logError))
+    .pipe(postcss([autoprefixer()]))
+    .pipe(sourcemaps.write())
+    .pipe(gulp.dest("./css"))
+    .pipe(browserSync.stream());
+}
+exports.style = style;
+
+function watchTask() {
+  browserSync.init({
+    server: ".",
+    browser: "firefox"
+  });
+  gulp.watch("./scss/**/*.scss", style);
+  gulp.watch("./*.html").on("change", browserSync.reload);
+  gulp.watch("./js/**/*.js").on("change", browserSync.reload);
+}
+exports.watchTask = watchTask;
+
+exports.default = series( style, watchTask, parallel(browser_sync, watch));
+</code>
+</pre>
     
   
 </div>
