@@ -35,7 +35,7 @@ Reading CodePen documentation, I found a Sass testing playground at https://www.
 
 Therefor there must be a defect with my build system(s). I tested three.
 
-I tested two development systems that use Gulp and one build system for Eleventy that does not use Gulp. All three give the same Undefined variable error.
+I tested one development system that uses NPM directly, one that uses Gulp, and one build system for Eleventy that does not use Gulp. All three give the same Undefined variable error.
 
 My Sass build systems successfully process Sass partials and compile them to CSS. They are failing to process Sass mixins and variables.
 

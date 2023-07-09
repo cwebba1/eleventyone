@@ -134,7 +134,7 @@ https://codepen.io/kevinpowell/pen/qBMQJVr</p>
 <p>The exact same code works on his CodePen file.
 Reading CodePen documentation, I found a Sass testing playground at https://www.sassmeister.com/. Kevin Powell's code also compiles correctly there.</p>
 <p>Therefor there must be a defect with my build system(s). I tested three.</p>
-<p>I tested two development systems that use Gulp and one build system for Eleventy that does not use Gulp. All three give the same Undefined variable error.</p>
+<p>I tested one development system that uses NPM directly, one that uses Gulp, and one build system for Eleventy that does not use Gulp. All three give the same Undefined variable error.</p>
 <p>My Sass build systems successfully process Sass partials and compile them to CSS. They are failing to process Sass mixins and variables.</p>
 <p>I will list the package.json contents and pertinent portions of the three development systems below. My question is what are the differences between these build systems and CodePen or Sassmeister where Sass mixins and variables fail to process?</p>
 <pre>
