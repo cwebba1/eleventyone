@@ -449,6 +449,24 @@ h6 {
   line-height: var(--typography-spacing-vertical);
 }
 
+blockquote {
+  color: #241000;
+  font-size: 1.0625em;
+  line-height: 1.325em;
+  margin: 0 0 0.5em 0;
+  font-style: italic;
+}
+
+blockquote.big {
+  color: #241000;
+  font-size: 1.125em;
+  line-height: 1.375em;
+  letter-spacing: 0.1em;
+  background: rgba(148, 209, 179, 0.3);
+  padding: 0.25em 1% 0.375em 2%;
+  margin: 1.25em 0 1.375em 0;
+}
+
 em {
   font-weight: 600;
 }

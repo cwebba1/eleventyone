@@ -39,7 +39,7 @@ I tested one development system that uses NPM directly, one that uses Gulp, and 
 
 My Sass build systems successfully process Sass partials and compile them to CSS. They are failing to process Sass mixins and variables.
 
-I will list the package.json contents and pertinent portions of the three development systems below. My question is what are the differences between these build systems and CodePen or Sassmeister where Sass mixins and variables fail to process?
+I will list the package.json contents and pertinent portions of the three development systems below. My question is what are the differences between CodePen or Sassmeister, and my build systems where my Sass mixins and variables fail to process?
 
 <pre>
 <code>
