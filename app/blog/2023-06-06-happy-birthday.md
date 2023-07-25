@@ -23,9 +23,9 @@ Wade told me that he had been having black stools and then he started to throw u
 
 The doctors ran a tube down Wade's throat all the way down to his liver and put a rubber band around the wound.
 
-<figure style=" float:left; margin-right:1em;">
-<image src="{{root}}assets/images/Arthur-Tress-band-aid-fantasy-1978.jpeg" alt="Arthur Tress, Band-aid Fantasy, 1978" style="width:100%;">
-<figcaption>Arthur Tress, Band-aid Fantasy, 1978</figcaptions>
+<figure class="fig-card left huge">
+<image src="{{root}}assets/images/Arthur-Tress-band-aid-fantasy-1978.jpeg" alt="Arthur Tress, Band-aid Fantasy, 1978">
+<figcaption>Arthur Tress, Band-aid Fantasy, 1978.</figcaptions>
 </figure>
 
 Afterward, Wade is suffering complications that he is retaining fluids. The doctors put a needle through his belly and withdrew four liters of liquid.

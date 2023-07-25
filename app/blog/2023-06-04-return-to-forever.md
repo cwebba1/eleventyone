@@ -11,24 +11,24 @@ templateEngineOverride: njk,md
 
 ## Return to Forever
 
-*“You must live in the present. There is no other land; there is no other life but this.”
-– Henry David Thoreau*
+> “You must live in the present. There is no other land; there is no other life but this.”
+> – Henry David Thoreau
 
 What I do shows what I love.
 I've just completed a client project using the new WordPress Block Editing system. The new WordPress Block Editing system is a bear. It is supposed to make it easy for clients to edit thier blogs themselves. It makes it really hard for developers to code.
-
-<figure style="width: 13em; float:left; margin-right:1em;">
-<image src="{{root}}assets/images/Rudolf-Koppitz-Austrian_1884-1936.jpeg" alt=" Photograph by Rudolf Koppitz, Austrian,1884-1936" style="(min-width: 30em) 50vw, 100vw; float:left;">
-<figcaption>Photograph by Rudolf Koppitz, Austrian,1884-1936</figcaptions>
-</figure>
 
 I stumbled onto a YouTube tutorial by Zach Leatherman demonstrating a six-minute build to launch an Eleventy blog and watching it inspired me to give Eleventy a new start.
 
 I sat off by myself at a developer's Meetup and worked though the tutorial. The video is about six munutes long but I needed to start and stop and play-back and see full screen to see the code and follow the steps.
 
+<figure class="fig-card left big">
+<image src="{{root}}assets/images/Rudolf-Koppitz-Austrian_1884-1936.jpeg" alt="hotograph by Rudolf Koppitz, Austrian,1884-1936">
+<figcaption>Photograph by Rudolf Koppitz, Austrian,1884-1936.</figcaptions>
+</figure>
+
 I built the Eleventy build in CWebba_09b.
 
-After getting it going I came home and sat in the back yard with my computer. I reopened the CWebba_09 Eleventy build and performed archeological research to figure out what I had done and the current status from nearly a year ago.
+After getting it going I came home and sat in the back yard with my computer. I reopened my CWebba_09 Eleventy build and performed archeological research to figure out what I had done and the current status from nearly a year ago.
 
 I backed up the documents in GIT first. When I launched Eleventy in the terminal I got NPM signals that node modules needed to be updated. I ended up updating Eleventy itself to the newer 2.0 version.
 

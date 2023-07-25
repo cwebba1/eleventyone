@@ -28,9 +28,9 @@ I currently have over 40 browser tabs open looking for how I can fix this simple
 
 What I need is to fix the date in the .eleventy.js script and format the output there, rather than in a template tag. I've circled around and around in the sparsely written Eleventy documentation looking for what should be a one-line of code answer.
 
-<figure style="width: 18em; float:left; margin-right:1em;">
-<image src="{{root}}assets/images/johnny-cash.jpeg" alt="A "fuck you" from Johnny Cash" style="(min-width: 30em) 50vw, 100vw; float:left;">
-<figcaption>A "fuck you" from Johnny Cash</figcaption>
+<figure class="fig-card left big">
+<image src="{{root}}assets/images/johnny-cash.jpeg" alt="A 'fuck you' from Johnny Cash">
+<figcaption>A "fuck you" from Johnny Cash</figcaptions>
 </figure>
 
 I want to say "fuck you" about both of these problems.

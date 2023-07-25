@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 html{
   font-size:16px;
   line-height:1.5;
@@ -20,7 +26,10 @@ main {
 }  
 
 /** _cwebba-base-01 */
-
+/* 072423 NEW */
+article {
+  display: flow-root;
+}
 /** typgraphy */
 
 .article-title,
@@ -53,16 +62,48 @@ figcaption {
   color: --red-10;
 }
 
+/* This may cause double margin
 figcaption p {
   margin: 0;
   font-size: inherit;
   line-height: 1.25;
   color: --red-10;
   text-align: left;
-}
+} */
 
 figcaption p:last-of-type {
   margin: 0.5em 0 0 0;
+}
+
+/* Image floats & sizes */
+@media (min-width:600px) {
+  .fig-card {
+  max-width:24rem;
+  /* 
+  border:1px solid hsl(355 50% 10% / 1); */
+  }
+  
+/* Image floats */
+.left {margin: 0 1rem 1rem 0;
+  float:left;
+  }
+  
+.right {margin: 0 0 1rem 1rem;
+  float:right;
+  }
+
+/* Figure sizing */
+.sml {
+width: clamp(10rem, 25vw, 16rem);
+  }
+
+.big {
+  width: clamp(16rem, 50vw, 24rem);
+  }
+
+.huge {
+    width: clamp(30em, 50vw, 100vw);
+  }
 }
 
 h1,
@@ -118,23 +159,28 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     blockquote {
-      color: #241000;
-      font-size: 1.0625em;
-      line-height: 1.325em;
-      margin: 0 0 0.5em 0;
+      /*  color: #241000; */
       font-style: italic;
-    }
-    
-    blockquote.big {
-      color: #241000;
-      font-size: 1.125em;
-      line-height: 1.375em;
-      letter-spacing: 0.1em;
-      background: rgba(148, 209, 179, 0.3);
-      padding: 0.25em 1% 0.375em 2%;
-      margin: 1.25em 0 1.375em 0;
-    }
-    
+      color: var(--front);
+        font-size: 1.0625em;
+        line-height: 1.325em;
+        padding: 0.25em 1% 0.375em 2%;
+        margin: 0 0 0.5em 0;
+        background: hsla(150, 50%, 86%, 0.3);
+        border-radius:0.5rem;
+  /* offset-x | offset-y | blur-radius | spread-radius | color */
+  box-shadow: 0 1px 6px 6px hsla(150, 50%, 90%, 0.3);
+      }
+      
+  /*    blockquote.big {
+        color: #241000;
+        font-size: 1.125em;
+        line-height: 1.375em;
+        letter-spacing: 0.1em;
+        background: rgba(148, 209, 179, 0.3);
+        padding: 0.25em 1% 0.375em 2%;
+        margin: 1.25em 0 1.375em 0;
+      } */     
 
     em {  font-weight: 600;
     }
@@ -216,7 +262,6 @@ h1, h2, h3, h4, h5, h6 {
       }
     }
 
-    
     .nav-list {
       margin: 0 1em 0 0;
       padding: 0;
@@ -232,8 +277,6 @@ h1, h2, h3, h4, h5, h6 {
       color: var(--blu-07); /* --clr-primary-080 */
       text-decoration: underline;
     }
-
-
 
 nav ul a {
   color: var(--blu-09); /* --clr-neutral-900*/
@@ -303,8 +346,6 @@ nav ul li:hover > ul {
   display: block;
 }
 
-
-
 .logo-box-head {
   width:12em;
 }
@@ -351,6 +392,57 @@ nav ul li:hover > ul {
     object-fit: cover;
   }
   
+  /* View Transition Styles 072323 */
+/* These style seem to lessen the View Transition effect. Just the meta declaration seems to work better ? 072323 */  
+.hero {
+  view-transition-name: hero;
+}
+
+@keyframes fade-in {
+  from { opacity: 0;
+  }
+to { opacity: 1;
+  }
+}
+@keyframes fade-out {
+  from { opacity: 1;
+  }
+to { opacity: 0;
+  }
+}
+
+/*
+@keyframes slide-to-left {
+  from {
+    transform: translateX(-4rem);
+  }
+  to {
+    transform: translateX(0rem);
+  }
+}
+*/
+::view-transition-old(hero),
+::view-transition-new(hero) { 
+  mix-blend-mode: normal;
+}
+
+::view-transition-old(img),
+::view-transition-new(img) { 
+  mix-blend-mode: normal;
+}
+
+::view-transition-old(root) {
+  animation: fade-out 450ms, cubic-bezier(0, 0, 0.2, 1),
+  slide-to-right 450ms, cubic-bezier(0, 0, 0.2, 1);
+}
+
+::view-transition-new(root) {
+  animation: fade-in 450ms, cubic-bezier(0, 0, 0.2, 1),
+  slide-to-left 450ms, cubic-bezier(0, 0, 0.2, 1);
+  mix-blend-mode: normal;
+}
+/* END View Transitions */
+
   @media (min-width: 45em) {
     .hero > div {
       grid-auto-flow: column;
