@@ -29,8 +29,8 @@
 
 <!--    <link rel="stylesheet" href="css/style.css">
  <link rel="stylesheet" href="css/style.css" />    -->
+<link rel="stylesheet" href="css/simpleLightbox.min.css">
 <link rel="stylesheet" href="css/styles.css">
-
 </head>
 <body>
         <header class="page-header">
@@ -124,6 +124,26 @@
     <h2 class="section-title text-center ">Featured articles</h2>
     <p class="text-center">Here is a sample of articles which I feel give you a good idea of what this site is all about.</p>
     <ul role="list" class="articles__list flow">
+<li>
+         <article class="snippet">
+  <img src="assets/images/time-machine-seven-hours.png" alt="Time Machine App status" class="snippet__image">
+  <h3 class="snippet__title"><a href="blog/08-02-2023-Watching-Paint-Dry.html">Watching Paint Dry</a></h3>
+  <p class="snippet__meta">Craig Webb on Wednesday, August 2, 2023</p>
+  <p class="snippet__body">The Apple Computer Time Machine app, used to make periodic backups of my data and software on the computer, is taking eight hours to backup my computer.</p> 
+  <a href="blog/08-02-2023-Watching-Paint-Dry.html" class="btn btn--primary">Continue Reading</a>
+  </article>
+</li>
+
+<li>
+         <article class="snippet">
+  <img src="assets/images/Jean-Michel-Basquiat_Notary_1983.jpeg" alt="Jean-Michel Basquiat, Notary,1983." class="snippet__image">
+  <h3 class="snippet__title"><a href="blog/Wade-Died.html">Wade Died</a></h3>
+  <p class="snippet__meta">Craig Webb on Thursday, July 27, 2023</p>
+  <p class="snippet__body">My brother died. A wretched end. I wish he wasn't gone.</p> 
+  <a href="blog/Wade-Died.html" class="btn btn--primary">Continue Reading</a>
+  </article>
+</li>
+
 <li>
          <article class="snippet">
   <img src="assets/images/Now-and-Then.jpeg" alt="An Illustration of Time from Earth today to the Big Bang." class="snippet__image">
@@ -331,4 +351,10 @@
 </footer>
 
 </body>
+  <script src="assets/js/simpleLightbox.min.js"></script>
+  <script>
+    new SimpleLightbox({elements: 'article a'});
+    // or if using jQuery
+    // $('.imageGallery1 a').simpleLightbox();
+    </script>
 </html>

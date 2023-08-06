@@ -15,8 +15,8 @@
 
 <!--    <link rel="stylesheet" href="css/style.css">
  <link rel="stylesheet" href="{{ '/css/style.css' | url }}" />    -->
+<link rel="stylesheet" href="{{ root }}css/simpleLightbox.min.css">
 <link rel="stylesheet" href="{{ root }}css/styles.css">
-
 </head>
 <body>
     {%include 'header.njk'%}
@@ -31,4 +31,10 @@
     </main>   
     {%include 'footer.njk'%}
 </body>
+  <script src="{{ root }}assets/js/simpleLightbox.min.js"></script>
+  <script>
+    new SimpleLightbox({elements: 'article a'});
+    // or if using jQuery
+    // $('.imageGallery1 a').simpleLightbox();
+    </script>
 </html>

@@ -17,10 +17,10 @@ Wade's "Fiancée" Shannon is an Internet catfisher. The social worker told me th
 
 I am wondering how I can make that happen.
 
-<figure class="fig-card left big">
+<a href="{{root}}assets/images/And-Life-Goes-On-1992.jpeg" title="I think if people died and then came back to life they'd appreciate life more."><figure class="fig-card left big">
 <image src="{{root}}assets/images/And-Life-Goes-On-1992.jpeg" alt="And Life Goes On (1992)">
 <figcaption>And Life Goes On (1992)</figcaptions>
-</figure>
+</figure></a>
 
 I called Wade's ex-wife Diane. I got a rumor yesterday that Wade had told her to fuck off when she went to a second visit. It turns out he did. She was offering to take care of Wade when he got out. Diane bitched at me for 45 minutes about how he mistreated her and how much she had done for Wade over 30 years.
 
