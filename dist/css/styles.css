@@ -422,11 +422,11 @@ figcaption p:last-of-type {
 
 /* Image floats & sizes */
 @media (min-width: 600px) {
-  .fig-card {
-    max-width: 24rem;
-    /* 
-    border:1px solid hsl(355 50% 10% / 1); */
-  }
+  /*  .fig-card {
+  max-width:24rem;
+
+  border:1px solid hsl(355 50% 10% / 1);
+  } */
   /* Image floats */
   .left {
     margin: 0 1rem 1rem 0;
@@ -438,14 +438,18 @@ figcaption p:last-of-type {
   }
   /* Figure sizing */
   .sml {
-    width: clamp(10rem, 25vw, 16rem);
-  }
+    width: clamp(10rem, 5.714rem + 11.429vw, 16rem);
+  } /* clamp(10rem, 25vw, 16rem); */
   .big {
-    width: clamp(16rem, 50vw, 24rem);
+    width: clamp(16rem, 10.286rem + 15.238vw, 24rem);
   }
   .huge {
-    width: clamp(30em, 50vw, 100vw);
+    width: clamp(18.75rem, 2.143rem + 44.286vw, 42rem);
   }
+  /*     width: 50%;
+  clamp(18.75rem, 2.143rem + 44.286vw, 42rem);
+  clamp(25rem, 10.714rem + 38.095vw, 45rem); 
+  width: clamp(28rem, 15.857rem + 32.381vw, 45rem);*/
 }
 h1,
 h2,
@@ -1372,5 +1376,59 @@ article > a > figure > img {
     transform: translate3d(0, 0, 0);
   }
 }
+/* _trig-03.scss */
+/* 080623 Modified for Eleventy SCSS
+body {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+*/
+.parent {
+  width: 50px;
+  aspect-ratio: 1;
+  background: lightblue;
+  border-radius: 50%;
+  position: relative;
+}
+
+.circle {
+  --size: 25px;
+  --offset: 100px;
+  width: var(--size);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background-color: orangered;
+  position: absolute;
+  left: calc(var(--size) / 2);
+  top: calc(var(--size) / 2);
+  transform: translate(calc(cos(var(--degrees)) * var(--offset)), calc(sin(var(--degrees)) * var(--offset)));
+}
+
+.circle:nth-of-type(1) {
+  --degrees: calc(0 * (360deg / 5));
+}
+
+.circle:nth-of-type(2) {
+  --degrees: calc(1 * (360deg / 5));
+}
+
+.circle:nth-of-type(3) {
+  --degrees: calc(2 * (360deg / 5));
+}
+
+.circle:nth-of-type(4) {
+  --degrees: calc(3 * (360deg / 5));
+}
+
+.circle:nth-of-type(5) {
+  --degrees: calc(4 * (360deg / 5));
+}
+
+/*
+html {
+  color-scheme: dark light;
+}
+*/
 
 /*# sourceMappingURL=styles.css.map */

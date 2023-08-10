@@ -23,7 +23,7 @@ Wade told me that he had been having black stools and then he started to throw u
 
 The doctors ran a tube down Wade's throat all the way down to his liver and put a rubber band around the wound.
 
-<figure class="fig-card left huge">
+<figure class="left big">
 <image src="{{root}}assets/images/Arthur-Tress-band-aid-fantasy-1978.jpeg" alt="Arthur Tress, Band-aid Fantasy, 1978">
 <figcaption>Arthur Tress, Band-aid Fantasy, 1978.</figcaptions>
 </figure>

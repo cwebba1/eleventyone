@@ -4,6 +4,9 @@ const Image = require('@11ty/eleventy-img');
 const path = require('path');
 const outdent = require('outdent');
 const eleventyNavigationPlugin = require('@11ty/eleventy-navigation');
+const sass = require("sass");
+const browserslist = require("browserslist");
+const { transform, browserslistToTargets } = require("lightningcss");
 
 // This image plugin isn't working either
 async function imageShortcode(src, alt) {
@@ -47,7 +50,56 @@ async function imageShortcode(src, alt) {
 
 module.exports = function(eleventyConfig) {
 
-  // --- Filter for Luxon --- taken from v8 starter
+
+
+// Recognize Sass as a "template languages"
+eleventyConfig.addTemplateFormats("scss");
+
+// Compile Sass
+eleventyConfig.addExtension("scss", {
+  outputFileExtension: "css",
+  compile: async function (inputContent, inputPath) {
+    // Skip files like _fileName.scss
+    let parsed = path.parse(inputPath);
+    if (parsed.name.startsWith("_")) {
+      return;
+    }
+
+    // Run file content through Sass
+    let result = sass.compileString(inputContent, {
+      loadPaths: [parsed.dir || "."],
+      sourceMap: false, // or true, your choice!
+    });
+
+    // Allow included files from @use or @import to
+    // trigger rebuilds when using --incremental
+    this.addDependencies(inputPath, result.loadedUrls);
+
+    // Add Browserlist / LightningCSS to Sass
+    let targets = browserslistToTargets(browserslist("> 0.2% and not dead"));
+
+//  This is SASS without LightningCSS
+//    return async () => {
+//      return result.css;
+//    };
+//  },
+//});
+
+//  This is SASS with LightningCSS and minification, no map
+return async () => {
+      let { code } = await transform({
+        code: Buffer.from(result.css),
+        minify: true,
+        sourceMap: false,
+        targets,
+      });
+          return result.css;
+    };
+  },
+});
+
+  
+// --- Filter for Luxon --- taken from v8 starter
   eleventyConfig.addFilter("readableDate", (dateObj, format, zone) => {
 		// Formatting tokens for Luxon: https://moment.github.io/luxon/#/formatting?id=table-of-tokens
     //dt = DateTime.fromJSDate(new Date(dateObj), { zone: zone || "utc" }).toFormat(format || "dd LLLL yyyy");

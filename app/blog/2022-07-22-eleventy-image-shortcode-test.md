@@ -16,7 +16,7 @@ William Gale Gedney.1932-1989. Porch Light. Leatherwood Kentucky,1964
 
 As of right now – 072422 – This test is failing. At the end of the 072322 session I pulled code for the Eleventy Image Plugin out of .eleventy.js and the image shortcode that belongs on this page.
 
-<figure class="fig-card left sml">
+<figure class="left sml">
 <image src="{{root}}assets/images/Edward-Bainbridge-Copnall_1934.png" alt="Edward Bainbridge Copnall">
 <figcaption>Edward Bainbridge Copnall (British, 1903-1973), Architectural Aspiration, 1934</figcaptions>
 </figure>

@@ -50,7 +50,7 @@ Jai guru deva
 Jai guru deva  
 Jai guru deva...  
   
-<figure class="fig-card left sml">
+<figure class="left big">
 <image src="{{root}}assets/images/john-lennon.jpeg" alt="John Lennon">
 <figcaption>John Lennon (British-American, 1940-1980).</figcaptions>
 </figure>

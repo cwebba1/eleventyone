@@ -91,11 +91,11 @@ figcaption p:last-of-type {
 
 /* Image floats & sizes */
 @media (min-width:600px) {
-  .fig-card {
+  /*  .fig-card {
   max-width:24rem;
-  /* 
-  border:1px solid hsl(355 50% 10% / 1); */
-  }
+ 
+  border:1px solid hsl(355 50% 10% / 1);
+  } */
   
 /* Image floats */
 .left {margin: 0 1rem 1rem 0;
@@ -108,17 +108,21 @@ figcaption p:last-of-type {
 
 /* Figure sizing */
 .sml {
-width: clamp(10rem, 25vw, 16rem);
+  width: clamp(10rem, 5.714rem + 11.429vw, 16rem);
+    } /* clamp(10rem, 25vw, 16rem); */
+  
+  .big {
+    width: clamp(16rem, 10.286rem + 15.238vw, 24rem);
+    }
+  
+  .huge {
+    width: clamp(18.75rem, 2.143rem + 44.286vw, 42rem);
+      } 
+  /*     width: 50%;
+  clamp(18.75rem, 2.143rem + 44.286vw, 42rem);
+  clamp(25rem, 10.714rem + 38.095vw, 45rem); 
+  width: clamp(28rem, 15.857rem + 32.381vw, 45rem);*/
   }
-
-.big {
-  width: clamp(16rem, 50vw, 24rem);
-  }
-
-.huge {
-    width: clamp(30em, 50vw, 100vw);
-  }
-}
 
 h1,
 h2,
