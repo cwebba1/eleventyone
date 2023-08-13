@@ -5,6 +5,7 @@ date: 2023-06-23
 tags: ['post', 'personal']
 image: assets/images/parque-naciona-edgar-zuniga.jpg
 imageAlt: Parque Naciona, Edgar Zúñiga Jiménez
+caption: I am grateful for the opportunity to serve but it feels very hard.
 description: My brother needs a new liver. He's does all he can to destroy himself. 
 templateEngineOverride: njk,md
 ---
@@ -17,22 +18,14 @@ Wade's "Fiancée" Shannon is an Internet catfisher. The social worker told me th
 
 I am wondering how I can make that happen.
 
-<a href="{{root}}assets/images/And-Life-Goes-On-1992.jpeg" title="I think if people died and then came back to life they'd appreciate life more."><figure class="fig-card left big">
-<image src="{{root}}assets/images/And-Life-Goes-On-1992.jpeg" alt="And Life Goes On (1992)">
+<figure class="fig-card left big">
+<a href="{{root}}assets/images/And-Life-Goes-On-1992.jpeg" title="I think if people died and then came back to life they'd appreciate life more."><image src="{{root}}assets/images/And-Life-Goes-On-1992.jpeg" alt="And Life Goes On (1992)"></a>
 <figcaption>And Life Goes On (1992)</figcaptions>
-</figure></a>
+</figure>
 
 I called Wade's ex-wife Diane. I got a rumor yesterday that Wade had told her to fuck off when she went to a second visit. It turns out he did. She was offering to take care of Wade when he got out. Diane bitched at me for 45 minutes about how he mistreated her and how much she had done for Wade over 30 years.
 
 As hour or so later I got a text message saying that she washes her hands of Wade. It is her final decision.
-
-Today afterwards I attempted to log onto my mother's Vanguard account to secure funding to help Wade. I have lost control of the account. Vanguard professes to have no record of me as being on the account. I revealed to mom has passed away. Now Vanguard is saying that Larry will be the primary beneficiary. They asked me to send a death certificate.
-
-I logged on to update my password that I lost. When I log on I go to Larry's account.
-
-I abandoned cart. I did not send a death certificate. Maybe once Larry dies I will be able to get the account. I don't want Larry's sister Gail to get her grimy hands on it.
-
-Bitch.
 
 So now I'm wondering how I will save my brother's life.
 

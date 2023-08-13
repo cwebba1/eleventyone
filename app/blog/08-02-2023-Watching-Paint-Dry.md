@@ -2,7 +2,7 @@
 title: Watching Paint Dry
 author: Craig Webb
 date: 2023-08-02
-tags: ['post', 'featured']
+tags: ['post']
 image: assets/images/time-machine-seven-hours.png
 imageAlt: Time Machine App status
 description: The Apple Computer Time Machine app, used to make periodic backups of my data and software on the computer, is taking eight hours to backup my computer. 

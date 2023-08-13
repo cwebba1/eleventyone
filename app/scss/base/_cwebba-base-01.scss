@@ -83,11 +83,11 @@ figcaption p {
   line-height: 1.25;
   color: --red-10;
   text-align: left;
-} */
+}
 
 figcaption p:last-of-type {
   margin: 0.5em 0 0 0;
-}
+} */
 
 /* Image floats & sizes */
 @media (min-width:600px) {
@@ -124,6 +124,13 @@ figcaption p:last-of-type {
   width: clamp(28rem, 15.857rem + 32.381vw, 45rem);*/
   }
 
+  /* This is to impose a standard ratio to blog floating images */
+  .blog-float-image {
+    aspect-ratio: 3.875 / 4;
+    object-fit: cover;
+  }
+
+
 h1,
 h2,
 h3 {
@@ -141,7 +148,8 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--red-09); /* --brand-300 */
     letter-spacing: var(--font-letterspacing-2);
     font-family: var(--ff-heading);
-}
+    text-wrap: balance;
+  }
     
     h1 {
       font-size: calc(var(--rem) * 2);
@@ -476,12 +484,14 @@ to { opacity: 0;
     margin: 6rem 0;
   }
   
+  /* This does not appear to be in use 081323
   .postgrid__list {
     --flow-spacer: 3rem;
     display:grid; 
     gap: 1rem;
     grid-template-columns:repeat(auto-fit, minmax(calc(33% - 3em), 1fr));    
   }
+  */
     /* //////////////////////
     Individual article page
     /////////////////////// */
@@ -598,7 +608,9 @@ grid-template-columns:repeat(auto-fit, minmax(calc(33% - 3em), 1fr));
   display: block;
   border-top-left-radius: 0.5rem;
   border-top-right-radius: 0.5rem;
-  background-size: cover;
+/*	background-size: cover; */
+  object-fit: cover;
+	aspect-ratio: 4 / 3;
 }
 
   .card h2 {
@@ -640,8 +652,8 @@ grid-template-columns:repeat(auto-fit, minmax(calc(33% - 3em), 1fr));
     background: var(--red-09); /* --clr-primary-120 */
     color: var(--red-01);; /* var(--red-09);  --clr-neutral-100*/
     font-weight: var(--fw-700);
-    border: 2px solid var(--clr-primary-110);
-  }
+    border: 2px solid var(--red-01);
+  }/*var(--clr-primary-110)*/
   .btn--primary:hover,
   .btn--primary:focus {
     color: var(--red-09);; /*   --clr-neutral-100*/
@@ -649,6 +661,7 @@ grid-template-columns:repeat(auto-fit, minmax(calc(33% - 3em), 1fr));
     border-color: var(--red-09); /* --clr-primary-090*/
   }
   
+  /* this uses KP neutral vars. Transferring nuetrals to vars-colors.scss 081023*/
   .btn--neutral {
     background-color: var(--clr-neutral-100);
     color: var(--clr-neutral-900);
@@ -663,6 +676,10 @@ grid-template-columns:repeat(auto-fit, minmax(calc(33% - 3em), 1fr));
   }
 
 /** * * * [ Custom Lihtbox Styles ] * * * * */
+
+.lightbox {
+  /* this is for JavaScript */
+}
 
 .slbImageWrap {
   font-size:80%;

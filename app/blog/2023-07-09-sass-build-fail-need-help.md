@@ -2,7 +2,7 @@
 title: Sass Build Systems fail Sass variables – Help!
 author: Craig Webb
 date: 2023-07-09
-tags: ['post', 'featured']
+tags: ['post']
 image: assets/images/Margaret-C-Cook_illustration_1913-Walt-Whitman_Leaves-of-Grass.jpeg
 imageAlt: An illustration by Margaret C. Cook for a 1913 edition of Walt Whitman’s Leaves of Grass.
 description: My multiple build systems for SASS fail to process Sass variables and mixins. I describe the issue and ask for help.

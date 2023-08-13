@@ -4,122 +4,67 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
 :root {
-  --brite-wht:rgba(252, 253, 253, 0.99);
-  --basal-wht: rgba(253, 254, 251, 0.8);
-  --pine-wht: rgba(252, 253, 253, 0.9);
-  --old-yeller: rgba(238, 238, 221, 0.99);
-  --plum: rgba(77, 26, 59, 0.95);
-  --brd-gry: rgba(223, 222, 221, 0.99);
-  --bdr-gry: rgba(212, 206, 201, 0.99);
-  /*! NEUTRALS: */
-  --neutral-100: hsla(0, 0%, 100%, 1);
-  --neutral-200: hsla(0, 0%, 84%, 1);
-  --neutral-300: hsla(0, 0%, 76%, 1);
-  --neutral-400: hsla(0, 0%, 68%, 1);
-  --neutral-500: hsla(0, 0%, 60%, 1);
-  --neutral-600: hsla(0, 0%, 52%, 1);
-  --neutral-700: hsla(0, 0%, 44%, 1);
-  --neutral-800: hsla(0, 0%, 36%, 1);
-  --neutral-900: hsla(0, 0%, 28%, 1);
-  /*! NEUTRALS: */
-  --brand-100: hsla(180, 22%, 100%, 1);
-  --brand-200: hsla(180, 22%, 84%, 1);
-  --brand-300: hsla(180, 24%, 76%, 1);
-  --brand-400: hsla(180, 26%, 68%, 1);
-  --brand-500: hsla(180, 28%, 60%, 1);
-  --brand-600: hsla(180, 30%, 52%, 1);
-  --brand-700: hsla(180, 32%, 44%, 1);
-  --brand-800: hsla(180, 32%, 36%, 1);
-  --brand-900: hsla(180, 32%, 28%, 1);
-  /*! BROWNS: */
-  --hdr-brn: rgba(51, 23, 0, 0.7);
-  --bdy-brn: rgba(36, 16, 0, 0.99);
-  --dk-dk--brn: rgba(33, 16, 0, 0.99);
-  --chocolate-brn: rgba(68, 51, 34, 0.99);
-  --left-rib:#AB8677;
-  --tan-txt:rgba(133, 116, 100, 1);
-  --tan-txt-dk:rgba(110, 92, 77, 0.99);
-  --hdr-brn:rgba(140, 65, 3, 0.99);
-  /*! GREENS: */
-  --bdy-grn: hsl(127, 100%, 15%, 0.99);
-  --celadon: rgba(187, 221, 204, 0.99);
-  --celadrk:rgba(169, 198, 184, 0.99);
-  --celadeep:rgba(123, 173, 148, 0.99);
-  --accidental-grn: rgba(127, 237, 218, 0.99);
-  --golf-green:rgba(43, 140, 92, 0.99);
-  --acid-grn:rgba(234, 255, 234, 1);
-  --wasabi:rgba(207, 230, 207, 1);
-  --shhh:hsla(180, 22%, 90%, 0.91);
-  /*! COLORS FOR SOCIAL MEDIA ICONS (022119) */
-  --old-grass:rgba(182,214,182, 0.99);
-  --tea-grass:rgba(221,239,210, 0.5);
-  --lemon-grass:rgba(237,255,226, 0.5);
-  /*! GREEN-BLUES: */
-  --cape-cod-blu:rgba(34,136,170, 0.99);
-  --tagblu:rgba(0, 136, 204, 0.99);
-  --arrow-circle:rgba(147, 198, 240, 0.99);
-  /* A-link Blues */
-  --midnight-blue:rgba(0, 68, 119, 0.99);
-  --royal-blu:rgba(0, 102, 204, 0.99);
-  --visitation-blu:rgba(51, 153, 204, 0.99);
-  --blu-moon:rgba(132, 164, 189, 0.99);
-  --daylight-blu:rgba(95, 193, 241, 0.99);
-  /*! ORANGE */
-  --pumpkin:rgba(230, 102, 45, 0.99);
-  --orange-lt:rgba(255, 153, 102, 0.99);
-  /*! REDS */
-  --blood:rgba(144, 0, 0, 0.99);
-  --redskin:rgba(172, 52, 21, 0.99);
-  /*! CWebba08 Prototyping Colors: */
-  --proto-pink: rgba(255, 222, 221, 0.99);
-  --proto-wht: rgba(254, 253, 250, 0.99);
-  --proto-blu: rgba(206, 239, 239, 0.99);
-  --grrly-grn: rgba(175, 223, 199, 0.99);
-  --juju-blu: rgba(188, 222, 250, 0.99);
-  --mustard: rgba(218, 180, 82, 0.99);
-  /* iframe and gradient colors go here */
-  /*! ICON Colors: */
-  --codepen: #000000;
-  --linkedin: #0077B5;
-  --twitter: #1DA1F2;
-  --github: #181717;
-  --behance: #1769FF;
-  --flickr: #0063DC;
-  --instagram: #E4405F;
-  --facebook: #3B5998;
-  --angellist: #000000;
-  --dribbble: #EA4C89;
-}
-
-:root {
-  --fs-300: 0.9375rem;
-  --fs-400: 1.0625rem;
-  --fs-500: 1.375rem;
-  --fs-600: 1.875rem;
-  --fs-700: 2rem;
-  /* "Taviraj", "Playfair Display", serif */
-  /*  
-      --clr-primary-200: hsla(169, 70%, 95%, 1);
-      --clr-primary-300: hsla(169, 100%, 39%, 1);
-      --clr-primary-400: hsla(169, 100%, 26%, 1);
-      --clr-primary-500: hsla(169, 100%, 16%, 1);
-  */
+  /** RED */
+  --red-12: hsla(339,91.3%,9%, 1);
+  --red-11: hsla(343,68.7%,18.8%, 1);
+  --red-10: hsla(350,56.4%,30.6%, 1);
+  --red-09: hsla(356,51.4%,42.7%, 1);
+  --red-08: hsla(3,60.5%,54.3%, 1);
+  --red-07: hsla(9,100%,63.9%, 1);
+  --red-06: hsla(21,98.9%,64.3%, 1);
+  --red-05: hsla(33,87.8%,71.2%, 1);
+  --red-04: hsla(41,73%,78.2%, 1);
+  --red-03: hsla(52,56.9%,87.3%, 1);
+  --red-02: hsla(60,48.7%,92.4%, 1);
+  --red-01: hsla(70,60%,98%, 1);
+  /** YELLOW */
+  --yel-12: hsla(32,87%,9%, 1);
+  --yel-11: hsla(36,83.9%,17.1%, 1);
+  --yel-10: hsla(39,83.1%,25.5%, 1);
+  --yel-09: hsla(42,84.9%,33.7%, 1);
+  --yel-08: hsla(44,86.9%,41.8%, 1);
+  --yel-07: hsla(47,86.7%,50%, 1);
+  --yel-06: hsla(47,80.4%,63.9%, 1);
+  --yel-05: hsla(51,71%,75.7%, 1);
+  --yel-04: hsla(56,65.5%,82.9%, 1);
+  --yel-03: hsla(60,63.3%,90.4%, 1);
+  --yel-02: hsla(63,72.4%,94.3%, 1);
+  --yel-01: hsla(66,100%,98%, 1);
+  /** BLUE */
+  --blu-12: hsla(240,87%,9%, 1);
+  --blu-11: hsla(227,71.7%,18%, 1);
+  --blu-10: hsla(222,62.8%,28.4%, 1);
+  --blu-09: hsla(218,58.8%,39%, 1);
+  --blu-08: hsla(216,56.9%,50%, 1);
+  --blu-07: hsla(213,88.9%,61%, 1);
+  --blu-06: hsla(211,89.6%,66.1%, 1);
+  --blu-05: hsla(207,88.8%,75.5%, 1);
+  --blu-04: hsla(205,86.7%,82.4%, 1);
+  --blu-03: hsla(202,84.6%,89.8%, 1);
+  --blu-02: hsla(201,81.3%,93.7%, 1);
+  --blu-01: hsla(200,81.8%,97.8%, 1);
+  /** GREEN: */
+  --grn-12: hsla(120,87%,9%, 1);
+  --grn-11: hsla(129,57.4%,18.4%, 1);
+  --grn-10: hsla(135,49%,28.4%, 1);
+  --grn-09: hsla(141,45.5%,38.8%, 1);
+  --grn-08: hsla(146,44.2%,49.2%, 1);
+  --grn-07: hsla(150,65.7%,60%, 1);
+  --grn-06: hsla(156,68.4%,66.5%, 1);
+  --grn-05: hsla(164,70.9%,77.1%, 1);
+  --grn-04: hsla(170,70.7%,83.9%, 1);
+  --grn-03: hsla(175,73.3%,91.2%, 1);
+  --grn-02: hsla(177,71.4%,94.5%, 1);
+  --grn-01: hsla(180,80%,98%, 1);
   --clr-neutral-100: hsla(0, 0%, 100%, 1);
   --clr-neutral-300: hsla(0, 0%, 50%, 1);
   --clr-neutral-400: hsla(0, 0%, 40%, 1);
   --clr-neutral-500: hsla(0, 0%, 60%, 1);
   --clr-neutral-900: hsla(0, 0%, 10%, 1);
+  --front: var(--blu-12, hsla(120,87%,9%));
+  --back: var(--red-01, hsla(70,60%,98%));
 }
 
-@media (min-width: 35em) {
-  :root {
-    --fs-300: 1rem;
-    --fs-400: 1.125rem;
-    --fs-500: 1.5rem;
-    --fs-600: 2.25rem;
-    --fs-700: 3rem;
-  }
-}
 /** –cwebba-vars.scss */
 :root {
   --clr-primary-010: #f8feeb;
@@ -196,63 +141,6 @@
   --font-brand-sans: "Ysabeau", "Ubuntu", Verdana, "Corbel", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
   --font-mono: Dank Mono,Operator Mono,Inconsolata,Fira Mono,ui-monospace,SF Mono,Monaco,Droid Sans Mono,Source Code Pro,monospace;
   --rem:18px;
-}
-
-:root {
-  /** RED */
-  --red-12: hsla(339,91.3%,9%, 1);
-  --red-11: hsla(343,68.7%,18.8%, 1);
-  --red-10: hsla(350,56.4%,30.6%, 1);
-  --red-09: hsla(356,51.4%,42.7%, 1);
-  --red-08: hsla(3,60.5%,54.3%, 1);
-  --red-07: hsla(9,100%,63.9%, 1);
-  --red-06: hsla(21,98.9%,64.3%, 1);
-  --red-05: hsla(33,87.8%,71.2%, 1);
-  --red-04: hsla(41,73%,78.2%, 1);
-  --red-03: hsla(52,56.9%,87.3%, 1);
-  --red-02: hsla(60,48.7%,92.4%, 1);
-  --red-01: hsla(70,60%,98%, 1);
-  /** YELLOW */
-  --yel-12: hsla(32,87%,9%, 1);
-  --yel-11: hsla(36,83.9%,17.1%, 1);
-  --yel-10: hsla(39,83.1%,25.5%, 1);
-  --yel-09: hsla(42,84.9%,33.7%, 1);
-  --yel-08: hsla(44,86.9%,41.8%, 1);
-  --yel-07: hsla(47,86.7%,50%, 1);
-  --yel-06: hsla(47,80.4%,63.9%, 1);
-  --yel-05: hsla(51,71%,75.7%, 1);
-  --yel-04: hsla(56,65.5%,82.9%, 1);
-  --yel-03: hsla(60,63.3%,90.4%, 1);
-  --yel-02: hsla(63,72.4%,94.3%, 1);
-  --yel-01: hsla(66,100%,98%, 1);
-  /** BLUE */
-  --blu-12: hsla(240,87%,9%, 1);
-  --blu-11: hsla(227,71.7%,18%, 1);
-  --blu-10: hsla(222,62.8%,28.4%, 1);
-  --blu-09: hsla(218,58.8%,39%, 1);
-  --blu-08: hsla(216,56.9%,50%, 1);
-  --blu-07: hsla(213,88.9%,61%, 1);
-  --blu-06: hsla(211,89.6%,66.1%, 1);
-  --blu-05: hsla(207,88.8%,75.5%, 1);
-  --blu-04: hsla(205,86.7%,82.4%, 1);
-  --blu-03: hsla(202,84.6%,89.8%, 1);
-  --blu-02: hsla(201,81.3%,93.7%, 1);
-  --blu-01: hsla(200,81.8%,97.8%, 1);
-  /** GREEN: */
-  --grn-12: hsla(120,87%,9%, 1);
-  --grn-11: hsla(129,57.4%,18.4%, 1);
-  --grn-10: hsla(135,49%,28.4%, 1);
-  --grn-09: hsla(141,45.5%,38.8%, 1);
-  --grn-08: hsla(146,44.2%,49.2%, 1);
-  --grn-07: hsla(150,65.7%,60%, 1);
-  --grn-06: hsla(156,68.4%,66.5%, 1);
-  --grn-05: hsla(164,70.9%,77.1%, 1);
-  --grn-04: hsla(170,70.7%,83.9%, 1);
-  --grn-03: hsla(175,73.3%,91.2%, 1);
-  --grn-02: hsla(177,71.4%,94.5%, 1);
-  --grn-01: hsla(180,80%,98%, 1);
-  --front: var(--blu-12, hsla(120,87%,9%));
-  --back: var(--red-01, hsla(70,60%,98%));
 }
 
 /* //////////////////////
@@ -415,11 +303,11 @@ figcaption p {
   line-height: 1.25;
   color: --red-10;
   text-align: left;
-} */
-figcaption p:last-of-type {
-  margin: 0.5em 0 0 0;
 }
 
+figcaption p:last-of-type {
+  margin: 0.5em 0 0 0;
+} */
 /* Image floats & sizes */
 @media (min-width: 600px) {
   /*  .fig-card {
@@ -451,6 +339,12 @@ figcaption p:last-of-type {
   clamp(25rem, 10.714rem + 38.095vw, 45rem); 
   width: clamp(28rem, 15.857rem + 32.381vw, 45rem);*/
 }
+/* This is to impose a standard ratio to blog floating images */
+.blog-float-image {
+  aspect-ratio: 3.875/4;
+  object-fit: cover;
+}
+
 h1,
 h2,
 h3 {
@@ -466,6 +360,7 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--red-09); /* --brand-300 */
   letter-spacing: var(--font-letterspacing-2);
   font-family: var(--ff-heading);
+  text-wrap: balance;
 }
 
 h1 {
@@ -793,13 +688,14 @@ Homepage
   margin: 6rem 0;
 }
 
+/* This does not appear to be in use 081323
 .postgrid__list {
   --flow-spacer: 3rem;
-  display: grid;
+  display:grid; 
   gap: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(calc(33% - 3em), 1fr));
+  grid-template-columns:repeat(auto-fit, minmax(calc(33% - 3em), 1fr));    
 }
-
+*/
 /* //////////////////////
 Individual article page
 /////////////////////// */
@@ -907,7 +803,9 @@ Individual article page
   display: block;
   border-top-left-radius: 0.5rem;
   border-top-right-radius: 0.5rem;
-  background-size: cover;
+  /*	background-size: cover; */
+  object-fit: cover;
+  aspect-ratio: 4/3;
 }
 
 .card h2 {
@@ -950,9 +848,8 @@ Individual article page
   background: var(--red-09); /* --clr-primary-120 */
   color: var(--red-01); /* var(--red-09);  --clr-neutral-100*/
   font-weight: var(--fw-700);
-  border: 2px solid var(--clr-primary-110);
-}
-
+  border: 2px solid var(--red-01);
+} /*var(--clr-primary-110)*/
 .btn--primary:hover,
 .btn--primary:focus {
   color: var(--red-09); /*   --clr-neutral-100*/
@@ -960,6 +857,7 @@ Individual article page
   border-color: var(--red-09); /* --clr-primary-090*/
 }
 
+/* this uses KP neutral vars. Transferring nuetrals to vars-colors.scss 081023*/
 .btn--neutral {
   background-color: var(--clr-neutral-100);
   color: var(--clr-neutral-900);
@@ -974,6 +872,10 @@ Individual article page
 }
 
 /** * * * [ Custom Lihtbox Styles ] * * * * */
+.lightbox {
+  /* this is for JavaScript */
+}
+
 .slbImageWrap {
   font-size: 80%;
   line-height: 1.1;
@@ -1376,59 +1278,5 @@ article > a > figure > img {
     transform: translate3d(0, 0, 0);
   }
 }
-/* _trig-03.scss */
-/* 080623 Modified for Eleventy SCSS
-body {
-  min-height: 100vh;
-  display: grid;
-  place-items: center;
-}
-*/
-.parent {
-  width: 50px;
-  aspect-ratio: 1;
-  background: lightblue;
-  border-radius: 50%;
-  position: relative;
-}
-
-.circle {
-  --size: 25px;
-  --offset: 100px;
-  width: var(--size);
-  aspect-ratio: 1;
-  border-radius: 50%;
-  background-color: orangered;
-  position: absolute;
-  left: calc(var(--size) / 2);
-  top: calc(var(--size) / 2);
-  transform: translate(calc(cos(var(--degrees)) * var(--offset)), calc(sin(var(--degrees)) * var(--offset)));
-}
-
-.circle:nth-of-type(1) {
-  --degrees: calc(0 * (360deg / 5));
-}
-
-.circle:nth-of-type(2) {
-  --degrees: calc(1 * (360deg / 5));
-}
-
-.circle:nth-of-type(3) {
-  --degrees: calc(2 * (360deg / 5));
-}
-
-.circle:nth-of-type(4) {
-  --degrees: calc(3 * (360deg / 5));
-}
-
-.circle:nth-of-type(5) {
-  --degrees: calc(4 * (360deg / 5));
-}
-
-/*
-html {
-  color-scheme: dark light;
-}
-*/
 
 /*# sourceMappingURL=styles.css.map */
