@@ -18,7 +18,7 @@ On Saturday I woke with swollen lymph nodes. I took an extra aspirin. We have al
 
 My neighbors that live above us have their windows open and they run their air conditioner.
 
-Because I don't smoke I am very sensitive to the smoke and dust. Event hough I am indoors, I am constantly blowing my nose and sneezing.
+Because I don't smoke I am very sensitive to the smoke and dust. Even though I am indoors, I am constantly blowing my nose and sneezing.
 
 On Friday we had a brief respite. The smoke blew in another direction and the air cleared for a bit. I got out and into my garden. I have plants to plant. I also went out Saturday and Sunday and worked on the garden. I have seeds sprouting in cups that I transplant into the garden. The seeds need to be separated into individual cups if two or more are growing together. Once they get big enough I can transfer them into the garden.
 

@@ -6,7 +6,7 @@ tags: ['post', 'personal']
 image: assets/images/parque-naciona-edgar-zuniga.jpg
 imageAlt: Parque Naciona, Edgar Zúñiga Jiménez
 caption: I am grateful for the opportunity to serve but it feels very hard.
-description: My brother needs a new liver. He's does all he can to destroy himself. 
+description: My brother needs a new liver. He's done all he can to destroy himself. 
 templateEngineOverride: njk,md
 ---
 

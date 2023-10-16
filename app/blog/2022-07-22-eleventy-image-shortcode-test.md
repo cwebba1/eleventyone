@@ -1,11 +1,11 @@
 ---
 title: Eleventy Image Shortcode Test
 author: Craig Webb
-date: 2022-07-23
+date: 2022-07-22
 tags: ['post', 'featured']
 image: assets/images/The-Day-1900_Hodler.jpeg
 imageAlt: The day, 1900 Hodler
-description: Eleventy is a JavaScript-based templating system gaining tracktion in the web development comunity. It is facile, fast and flexible. 
+description: Eleventy is a JavaScript-based templating system gaining traction in the web development community. It is facile, fast and flexible. 
 templateEngineOverride: njk,md
 ---
 

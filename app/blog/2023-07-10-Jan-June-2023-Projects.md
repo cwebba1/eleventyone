@@ -4,6 +4,20 @@ author: Craig Webb
 date: 2023-07-10
 image: assets/images/Now-and-Then.jpeg
 imageAlt: An Illustration of Time from Earth today to the Big Bang.
+img01: 2564/3213
+img02: 1121/898
+img03: 1766/2134
+img04: 1713/1133
+img05: 1914/1054
+img06: 2003/2366
+img07: 872/897
+img08: 582/327
+img09: 1752/1144
+img10: 1390/1506
+img11: 2056/1014
+img12: 2504/4016
+img13: 1676/3336
+img14: 2048/1680
 description: An inventory and accounting of Craig Webb Art R&D coding projects for the first half of 2023.
 tags: ["post", "featured"]
 ---
@@ -89,7 +103,7 @@ Parallax is a design technique that uses CSS Translate and Zoom declarations to 
 
 ## CSS Intersection Observer with Scrolling Animation and Transitions
 <figure class="fig-card left sml">
-<a href="{{root}}assets/images/recent-work-images/intersection-observer.png" title="Intersection Observer prototype from KP tutorial"><image src="{{root}}assets/images/recent-work-images/intersection-observer.png" alt="Intersection Observer" class="blog-float-image"></a>
+<a href="{{root}}assets/images/recent-work-images/intersection-observer.png" title="Intersection Observer prototype"><image src="{{root}}assets/images/recent-work-images/intersection-observer.png" style="aspect-ratio: {{img01}};" alt="Intersection Observer"></a>
 <figcaption>Intersection Observer prototype</figcaptions>
 </figure>
 CSS Intersection Observer is a CSS API that allows designers to target design elements when they come into view upon scroll. Various transformations and animations are triggered as the user scrolls.
@@ -97,7 +111,7 @@ CSS Intersection Observer is a CSS API that allows designers to target design el
 
 ## CSS View Transitions (Page Transitions without JavaScript)
 <figure class="fig-card left sml">
-<a href="{{root}}assets/images/recent-work-images/viewTransition-API-01a.png" title="View Transitions prototype"><image src="{{root}}assets/images/recent-work-images/viewTransition-API-01a.png" alt="View Transitions" class="blog-float-image"></a>
+<a href="{{root}}assets/images/recent-work-images/viewTransition-API-01a.png" title="View Transitions prototype"><image src="{{root}}assets/images/recent-work-images/viewTransition-API-01a.png" style="aspect-ratio: {{img02}};" alt="View Transitions"></a>
 <figcaption>View Transitions prototype</figcaptions>
 </figure>
 The View Transitions API is so brand-spanking-new that it only works on Chrome. Soon it will work on all major browsers. View Transitions blends and smoothly transitions between two pages like a complex JavaScript program, but with a few lines of CSS.
@@ -107,7 +121,7 @@ Individual page elements can also be targeted for transitions. I've also seen ex
 
 ## Trigonometric functions in CSS
 <figure class="fig-card left sml">
-<a href="{{root}}assets/images/recent-work-images/trig-02.png" title="Trigonometric functions in CSS"><image src="{{root}}assets/images/recent-work-images/trig-02.png" alt="Trigonometric functions" class="blog-float-image"></a>
+<a href="{{root}}assets/images/recent-work-images/trig-02.png" title="Trigonometric functions in CSS"><image src="{{root}}assets/images/recent-work-images/trig-02.png" style="aspect-ratio: {{img03}};" alt="Trigonometric functions"></a>
 <figcaption>Trigonometric functions prototype</figcaptions>
 </figure>
 Trigonometry is a new set of CSS value functions with many uses. Trigonometric functions provide a capacity to position design elements mathematically, breaking out of the box model.
@@ -122,7 +136,7 @@ CSS Color Filter Properties are one set of CSS Value Functions. Any image or ele
 
 ## CSS + JavaScript Tabs with Aria-controls - progressively enhanced
 <figure class="fig-card left sml">
-<a href="{{root}}assets/images/recent-work-images/ARIA-Tabs.png" title="Tab interface with AREA functions in CSS"><image src="{{root}}assets/images/recent-work-images/ARIA-Tabs.png" alt="progressively enhanced aria-controlled tabs" class="blog-float-image"></a>
+<a href="{{root}}assets/images/recent-work-images/ARIA-Tabs.png" title="Tab interface with AREA functions in CSS"><image src="{{root}}assets/images/recent-work-images/ARIA-Tabs.png" style="aspect-ratio: {{img04}};" alt="progressively enhanced aria-controlled tabs"></a>
 <figcaption>Progressively enhanced aria-controlled tabs</figcaptions>
 </figure>
 Tabs is a common design technique used to condense information so that users can visually scan and access information without scrolling. Often tabs makes information hard to access for disabled users. The tutorial I studied made an effort to make data accessible for Reader devices using aria-controls.
@@ -130,7 +144,7 @@ Tabs is a common design technique used to condense information so that users can
 
 ## Chroma.js Color Library, New CSS Color Spaces
 <figure class="fig-card left sml">
-<a href="{{root}}assets/images/recent-work-images/Chroma-color-app.png" title="Chroma.js Color Interpolation App"><image src="{{root}}assets/images/recent-work-images/Chroma-color-app.png" alt="Chroma.js Color Interpolation" class="blog-float-image"></a>
+<a href="{{root}}assets/images/recent-work-images/Chroma-color-app.png" title="Chroma.js Color Interpolation App"><image src="{{root}}assets/images/recent-work-images/Chroma-color-app.png" style="aspect-ratio: {{img05}};" alt="Chroma.js Color Interpolation"></a>
 <figcaption>Chroma.js Color Interpolation App</figcaptions>
 </figure>
 Chroma.js is a color library built by the same Evil Martin folks who make PostCSS and Tailwind. I built a color tool to interpolate two colors and provide values. The interpolation is output using the OKlch color space, one of many new color space options. My goal is to create a color app to help choose coordinated colors.
@@ -141,7 +155,7 @@ Learning JavaScript Local Storage is a step in the direction of creating my colo
 
 ## Eleventy JamStack web development
 <figure class="fig-card left sml">
-<a href="{{root}}assets/images/recent-work-images/web-development-syllabus.png" title="Eleventy JamStack web development"><image src="{{root}}assets/images/recent-work-images/web-development-syllabus.png" alt="Eleventy JamStack web development" class="blog-float-image"></a>
+<a href="{{root}}assets/images/recent-work-images/web-development-syllabus.png" title="Eleventy JamStack web development"><image src="{{root}}assets/images/recent-work-images/web-development-syllabus.png" style="aspect-ratio: {{img06}};" alt="Eleventy JamStack web development"></a>
 <figcaption>Eleventy JamStack web development</figcaptions>
 </figure>
 I spent loads of time on building an Eleventy Jamstack system in 2022. This year I added functions to properly track and display dates and add automatic navigation data. I also built a custom card layout to display blog posts. You are reading my Eleventy blog right now.
@@ -155,7 +169,7 @@ I have made many types of cards. This card component is a column format. This ca
 
 ## Desktop / Mobile Card (Pair-programing-challenge)
 <figure class="fig-card left sml">
-<a href="{{root}}assets/images/recent-work-images/Pair-programing-challenge.png" title="Desktop / Mobile Card"><image src="{{root}}assets/images/recent-work-images/Pair-programing-challenge.png" alt="Desktop / Mobile Card" class="blog-float-image"></a>
+<a href="{{root}}assets/images/recent-work-images/Pair-programing-challenge.png" title="Desktop / Mobile Card"><image src="{{root}}assets/images/recent-work-images/Pair-programing-challenge.png" style="aspect-ratio: {{img07}};" alt="Desktop / Mobile Card"></a>
 <figcaption>Desktop / Mobile Card (Pair-programing-challenge)</figcaptions>
 </figure>
 This card component has a lot of fancy design elements. The layout changes between mobile and desktop. This card was built in a Pair Programing Meetup while helping a friend complete a design challenge and learn CSS.
@@ -163,7 +177,7 @@ This card component has a lot of fancy design elements. The layout changes betwe
 
 ## Pair Programing, Meetup and Discord
 <figure class="fig-card left sml">
-<a href="{{root}}assets/images/recent-work-images/hacker-hours-meetup.jpeg" title="Pair Programing, Meetup and Discord"><image src="{{root}}assets/images/recent-work-images/hacker-hours-meetup.jpeg" alt="Developers working together" class="blog-float-image"></a>
+<a href="{{root}}assets/images/recent-work-images/hacker-hours-meetup.jpeg" title="Pair Programing, Meetup and Discord"><image src="{{root}}assets/images/recent-work-images/hacker-hours-meetup.jpeg" style="aspect-ratio: {{img08}};" alt="Developers working together"></a>
 <figcaption>Pair Programing, Meetup and Discord</figcaptions>
 </figure>
 Networking with other developers offers opportunities to develop connections and work on teamwork skills. Meetups where I participated include D3, React, UX/UI and WordPress. Meetups in New York City are often sponsored and hosted by big corporations. I get to see company work environs and learn about company cultures. 
@@ -177,11 +191,11 @@ Sticky footers are one of those patterns that seem to require repeated revisits.
 
 ### Grid Stacking Text on Image
 <figure class="fig-card left sml">
-<a href="{{root}}assets/images/recent-work-images/Stacking-Grid.png" title="Grid Stacking Title on Image"><image src="{{root}}assets/images/recent-work-images/Stacking-Grid.png" alt="Grid Stacking Title on Image" class="blog-float-image"></a>
+<a href="{{root}}assets/images/recent-work-images/Stacking-Grid.png" title="Grid Stacking Title on Image"><image src="{{root}}assets/images/recent-work-images/Stacking-Grid.png" style="aspect-ratio: {{img09}};" alt="Grid Stacking Title on Image"></a>
 <figcaption>Grid Stacking Title on Image</figcaptions>
 </figure>
 <figure class="fig-card right sml">
-<a href="{{root}}assets/images/recent-work-images/stacked-grid-mobile.png" title="Grid Stacking Title on Image"><image src="{{root}}assets/images/recent-work-images/stacked-grid-mobile.png" alt="Grid Stacking Title on Image mobile view" class="blog-float-image"></a>
+<a href="{{root}}assets/images/recent-work-images/stacked-grid-mobile.png" title="Grid Stacking Title on Image"><image src="{{root}}assets/images/recent-work-images/stacked-grid-mobile.png" style="aspect-ratio: {{img10}};" alt="Grid Stacking Title on Image mobile view"></a>
 <figcaption>Grid Stacking Title on Image mobile view</figcaptions>
 </figure>
 The idea behind this tutorial-based prototype is to have a two-column header with an image panel and a text panel on desktop. At mobile or tablet widths the text background color disapears and the text stacks on top of the image.
@@ -191,7 +205,7 @@ I add reference notes into my prototypes. This prototype notes say that the tech
 
 ### Nested-Grid Form
 <figure class="fig-card left sml">
-<a href="{{root}}assets/images/recent-work-images/Nested-Grid-Form.png" title="Nested-Grid Form"><image src="{{root}}assets/images/recent-work-images/Nested-Grid-Form.png" alt="Nested-Grid Form" class="blog-float-image"></a>
+<a href="{{root}}assets/images/recent-work-images/Nested-Grid-Form.png" title="Nested-Grid Form"><image src="{{root}}assets/images/recent-work-images/Nested-Grid-Form.png" style="aspect-ratio: {{img11}};" alt="Nested-Grid Form"></a>
 <figcaption>Nested-Grid Form</figcaptions>
 </figure>
 This simple form layout changes from two-columns to single-column on mobile. It uses a media query. All form inputs are the same width. Using grid styles and fr widths is different from using a percentage-based form layout. A more detailed form with different sized form inputs requires widths to be specified.  
@@ -215,7 +229,7 @@ This layout uses a combination of flexbox and grid. It is not yet resolved for f
 
 ## CSS Card Layout for Eleventy Blog
 <figure class="fig-card left sml">
-<a href="{{root}}assets/images/recent-work-images/possibilities-layout.png" title="Possibilities Card Layout"><image src="{{root}}assets/images/recent-work-images/possibilities-layout.png" alt="Possibilities Card Layout" class="blog-float-image"></a>
+<a href="{{root}}assets/images/recent-work-images/possibilities-layout.png" title="Possibilities Card Layout"><image src="{{root}}assets/images/recent-work-images/possibilities-layout.png" style="aspect-ratio: {{img12}};" alt="Possibilities Card Layout"></a>
 <figcaption>Possibilities Card Layout for Eleventy Blog</figcaptions>
 </figure>
 The flexbox card layout is applied to my Eleventy blog. Currently the page is named "Possibilities". I plan to replace the blog page with this layout. I like the card layout because it presents three blog entries side-by-side for faster viewer consumption. The pre-exisitng static layout lists each blog one below the other in a single column layout.
@@ -223,7 +237,7 @@ The flexbox card layout is applied to my Eleventy blog. Currently the page is na
 
 ## Floats
 <figure class="fig-card left sml">
-<a href="{{root}}assets/images/recent-work-images/Floats-prototype_01.png" title="Responsive Floats"><image src="{{root}}assets/images/recent-work-images/Floats-prototype_01.png" alt="Responsive Floats" class="blog-float-image"></a>
+<a href="{{root}}assets/images/recent-work-images/Floats-prototype_01.png" title="Responsive Floats"><image src="{{root}}assets/images/recent-work-images/Floats-prototype_01.png" style="aspect-ratio: {{img13}};" alt="Responsive Floats"></a>
 <figcaption>Responsive Floats</figcaptions>
 </figure>
 I conducted research to see how floats work with Flexbox and Grid. It turns out that Floats do not work with either. There is also no simple Grid or Flexbox substitute that works as easily as "float left".
@@ -233,7 +247,7 @@ I built a set of float patterns that use CSS clamp to create fluid image widths 
 
 ## No-JQuery Lightbox
 <figure class="fig-card left sml">
-<a href="{{root}}assets/images/recent-work-images/SimpleLightbox_06.png" title="No-JQuery Lightbox"><image src="{{root}}assets/images/recent-work-images/SimpleLightbox_06.png" alt="No-JQuery Lightbox" class="blog-float-image"></a>
+<a href="{{root}}assets/images/recent-work-images/SimpleLightbox_06.png" title="No-JQuery Lightbox"><image src="{{root}}assets/images/recent-work-images/SimpleLightbox_06.png" style="aspect-ratio: {{img14}};" alt="No-JQuery Lightbox"></a>
 <figcaption>No-JQuery Lightbox</figcaptions>
 </figure>
 I tested five Lightbox programs and chose one that uses JavaScript with no dependencies. I tested and modified styles. I intend to integrate it into my Eleventy blog.
