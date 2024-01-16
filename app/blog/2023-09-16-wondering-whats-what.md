@@ -2,7 +2,7 @@
 title: Wondering what's what
 author: Craig Webb
 date: 2023-09-16
-tags: ['post', 'featured']
+tags: ['post']
 image: assets/images/Musk-and-Dorsey.png
 imageAlt: Elon Musk and Jack Dorsey
 img01: 600/800
@@ -12,6 +12,8 @@ img04: 955/915
 description: The culture has changed and I am looking around wondering what is what. Everything is very confusing right now. 
 templateEngineOverride: njk,md
 ---
+## My posts
+
 
 # Wondering what's what.
 

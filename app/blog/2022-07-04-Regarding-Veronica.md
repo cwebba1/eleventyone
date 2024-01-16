@@ -5,7 +5,7 @@ date: 2022-07-04
 image: assets/images/Regarding-Veronica-window.jpg
 imageAlt: Regarding Veronica, Stain Glass Window
 description: Fired from her teaching job at a Catholic school, a transgender woman contemplates suicide until she meets a seven year old girl with two fathers—one of whom recently left with a woman —and they have a profound impact on each other’s lives.
-tags: ["post", "featured"]
+tags: ["post"]
 ---
 <style>
     div p {

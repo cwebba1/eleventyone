@@ -5,7 +5,7 @@ date: 2023-07-10
 image: assets/images/Now-and-Then.jpeg
 imageAlt: An Illustration of Time from Earth today to the Big Bang.
 img01: 2564/3213
-img02: 1121/898
+img02: 1678/962
 img03: 1766/2134
 img04: 1713/1133
 img05: 1914/1054
@@ -111,7 +111,7 @@ CSS Intersection Observer is a CSS API that allows designers to target design el
 
 ## CSS View Transitions (Page Transitions without JavaScript)
 <figure class="fig-card left sml">
-<a href="{{root}}assets/images/recent-work-images/viewTransition-API-01a.png" title="View Transitions prototype"><image src="{{root}}assets/images/recent-work-images/viewTransition-API-01a.png" style="aspect-ratio: {{img02}};" alt="View Transitions"></a>
+<a href="{{root}}assets/images/recent-work-images/viewTransition-API-02a.jpg" title="View Transitions prototype"><image src="{{root}}assets/images/recent-work-images/viewTransition-API-02a.jpg" style="aspect-ratio: {{img02}};" alt="View Transitions"></a>
 <figcaption>View Transitions prototype</figcaptions>
 </figure>
 The View Transitions API is so brand-spanking-new that it only works on Chrome. Soon it will work on all major browsers. View Transitions blends and smoothly transitions between two pages like a complex JavaScript program, but with a few lines of CSS.

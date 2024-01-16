@@ -5,7 +5,7 @@ date: 2022-07-11
 image: assets/images/Apollo-11-moon-landing_at_Central-Park.jpg
 imageAlt: Crowd in Central Park watches Apollo 11 moon landing on large TV screens
 description: Documenting what I learned about Permalinks, Roots and Relative Paths in Eleventy while following a tutorial and making additional changes.
-tags: ["post", "featured"]
+tags: ["post"]
 ---
 
 ## Permalinks, Roots and Relative Paths in Eleventy

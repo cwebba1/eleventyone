@@ -2,7 +2,7 @@
 title: Happy New Year Risa
 author: Craig Webb
 date: 2023-09-25
-tags: ['post', 'featured']
+tags: ['post']
 image: assets/images/divine-soul.jpg
 imageAlt: You are embraced for who you truly are.
 img01: 600/800

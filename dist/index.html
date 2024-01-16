@@ -17,7 +17,10 @@
 
   <link rel="icon" href="https://www.craigwebbart.com/favicon-32x32.png" type="image/svg+xml" />
 
-<!-- Default HTML embed snippet from Google Fonts -->
+
+
+<!--  add font list -->
+    <!-- Default HTML embed snippet from Google Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -27,10 +30,15 @@
 <link href="https://fonts.googleapis.com/css2?family=Ysabeau:ital,wght@0,1;0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,1;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap" rel="stylesheet">
 
 
-<!--    <link rel="stylesheet" href="css/style.css">
- <link rel="stylesheet" href="css/style.css" />    -->
+
+
+<!--  add styles list -->
+    
+
 <link rel="stylesheet" href="css/simpleLightbox.min.css">
 <link rel="stylesheet" href="css/styles.css">
+
+
 </head>
 <body>
         <header class="page-header">
@@ -87,14 +95,19 @@
 		V22.304z"/>
 </g></a>
 </svg></figure>
-  <nav>
-    <ul><li><a href="/">Home</a></li>
-<li><a href="/blog.html">Blog</a></li>
-<li><a href="/about/about.html">About</a><ul><li><a href="/about/team.html">Team</a></li>
-<li><a href="/about/privacy.html">Privacy</a></li></ul></li>
-<li><a href="/possibilities.html">Possibilities</a></li></ul>
-  </nav>
-  
+	
+<nav>
+  <ul role="list" class="nav-list flex-group">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="blog.html">Blog</a></li>
+    <li><a href="about/about.html">About</a>
+      <ul>
+        <li><a href="about/team.html">Team</a></li>
+        <li><a href="about/privacy.html">Privacy</a></li>
+      </ul></li>
+    <li><a href="possibilities.html">Possibilities</a></li>
+  </ul>
+</nav>  
     </div>
   </div>
 </header>
@@ -127,7 +140,7 @@
     <ul role="list" class="articles__list flow">
 <li>
          <article class="snippet">
-  <img src="assets/images/José-Clemente-Orozco_Catharsis-1934.jpg" alt="José Clemente Orozco, Catharsis (partial view), 1934" class="snippet__image">
+  <img src="assets/images/Jose-Clemente-Orozco_Catharsis-1934.jpg" alt="José Clemente Orozco, Catharsis (partial view), 1934" class="snippet__image">
   <h3 class="snippet__title"><a href="blog/I-am-at-war-with-YouTube.html">I am at war with YouTube</a></h3>
   <p class="snippet__meta">Craig Webb on Saturday, November 11, 2023</p>
   <p class="snippet__body">YouTube has engaged in an evil, vicious campaign to block users who use ad blocking software. This premeditated aggression will not stand.</p> 
@@ -152,26 +165,6 @@
   <p class="snippet__meta">Craig Webb on Monday, September 25, 2023</p>
   <p class="snippet__body">Website development is complicated. Sometimes long stretches of concentration pays off.</p> 
   <a href="blog/holed-up-and-working-from-home.html" class="btn btn--primary">Continue Reading</a>
-  </article>
-</li>
-
-<li>
-         <article class="snippet">
-  <img src="assets/images/divine-soul.jpg" alt="You are embraced for who you truly are." class="snippet__image">
-  <h3 class="snippet__title"><a href="blog/Happy-New-Year-Risa.html">Happy New Year Risa</a></h3>
-  <p class="snippet__meta">Craig Webb on Monday, September 25, 2023</p>
-  <p class="snippet__body">I called my good friend Risa to say "hello".</p> 
-  <a href="blog/Happy-New-Year-Risa.html" class="btn btn--primary">Continue Reading</a>
-  </article>
-</li>
-
-<li>
-         <article class="snippet">
-  <img src="assets/images/Musk-and-Dorsey.png" alt="Elon Musk and Jack Dorsey" class="snippet__image">
-  <h3 class="snippet__title"><a href="blog/wondering-whats-what.html">Wondering what's what</a></h3>
-  <p class="snippet__meta">Craig Webb on Saturday, September 16, 2023</p>
-  <p class="snippet__body">The culture has changed and I am looking around wondering what is what. Everything is very confusing right now.</p> 
-  <a href="blog/wondering-whats-what.html" class="btn btn--primary">Continue Reading</a>
   </article>
 </li>
 
@@ -287,16 +280,6 @@
 
 <li>
          <article class="snippet">
-  <img src="assets/images/The-Day-1900_Hodler.jpeg" alt="The day, 1900 Hodler" class="snippet__image">
-  <h3 class="snippet__title"><a href="blog/eleventy-image-shortcode-test.html">Eleventy Image Shortcode Test</a></h3>
-  <p class="snippet__meta">Craig Webb on Friday, July 22, 2022</p>
-  <p class="snippet__body">Eleventy is a JavaScript-based templating system gaining traction in the web development community. It is facile, fast and flexible.</p> 
-  <a href="blog/eleventy-image-shortcode-test.html" class="btn btn--primary">Continue Reading</a>
-  </article>
-</li>
-
-<li>
-         <article class="snippet">
   <img src="assets/images/Little-Boy-Lost_1920_Dorothy-Lathrop.jpeg" alt="Little Boy Lost, 1920, by Dorothy Lathrop" class="snippet__image">
   <h3 class="snippet__title"><a href="blog/eleventy-is-my-new-jamstack.html">Eleventy is my new jam(stack)</a></h3>
   <p class="snippet__meta">Craig Webb on Wednesday, July 20, 2022</p>
@@ -317,26 +300,6 @@
 
 <li>
          <article class="snippet">
-  <img src="assets/images/Apollo-11-moon-landing_at_Central-Park.jpg" alt="Crowd in Central Park watches Apollo 11 moon landing on large TV screens" class="snippet__image">
-  <h3 class="snippet__title"><a href="blog/Permalinks-Roots-and-Relative-Paths-in-Eleventy.html">Permalinks, Roots and Relative Paths in Eleventy</a></h3>
-  <p class="snippet__meta">Craig Webb on Monday, July 11, 2022</p>
-  <p class="snippet__body">Documenting what I learned about Permalinks, Roots and Relative Paths in Eleventy while following a tutorial and making additional changes.</p> 
-  <a href="blog/Permalinks-Roots-and-Relative-Paths-in-Eleventy.html" class="btn btn--primary">Continue Reading</a>
-  </article>
-</li>
-
-<li>
-         <article class="snippet">
-  <img src="assets/images/Regarding-Veronica-window.jpg" alt="Regarding Veronica, Stain Glass Window" class="snippet__image">
-  <h3 class="snippet__title"><a href="blog/Regarding-Veronica.html">Regarding Veronica</a></h3>
-  <p class="snippet__meta">David G Beck on Monday, July 4, 2022</p>
-  <p class="snippet__body">Fired from her teaching job at a Catholic school, a transgender woman contemplates suicide until she meets a seven year old girl with two fathers—one of whom recently left with a woman —and they have a profound impact on each other’s lives.</p> 
-  <a href="blog/Regarding-Veronica.html" class="btn btn--primary">Continue Reading</a>
-  </article>
-</li>
-
-<li>
-         <article class="snippet">
   <img src="assets/images/FUXlTbkXoAEnHgN.jpeg" alt="Drive-in Movie" class="snippet__image">
   <h3 class="snippet__title"><a href="blog/Working-Stiff.html">Working Stiff</a></h3>
   <p class="snippet__meta">C.S. Webb on Friday, July 1, 2022</p>
@@ -347,10 +310,6 @@
 </ul>
   </div>
 </section> 
-
-
-    
-
 
 
 

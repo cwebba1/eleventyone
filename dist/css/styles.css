@@ -1,8 +1,9 @@
-@charset "UTF-8";
+/*! #1 _fonts.scss  */
 @import url("https://fonts.googleapis.com/css2?family=Ysabeau:ital,wght@0,1;0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,1;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Taviraj:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+/*! #2 _vars-colors.scss  */
 :root {
   /** RED */
   --red-12: hsla(339,91.3%,9%, 1);
@@ -65,7 +66,7 @@
   --back: var(--red-01, hsla(70,60%,98%));
 }
 
-/** –cwebba-vars.scss */
+/*! #3 _cwebba-vars.scss  */
 :root {
   --clr-primary-010: #f8feeb;
   --clr-primary-020: #eefff2;
@@ -143,9 +144,8 @@
   --rem:18px;
 }
 
-/* //////////////////////
-  RESET - source: https://piccalil.li/blog/a-modern-css-reset
-  /////////////////////// */
+/*! #4 resets/_reset.scss  */
+/* RESET source: https://piccalil.li/blog/a-modern-css-reset */
 /* Box sizing rules */
 *,
 *::before,
@@ -221,6 +221,7 @@ select {
     scroll-behavior: auto !important;
   }
 }
+/*! #5 base/cwebba-base-01.scss  */
 /** _cwebba-base-01 */
 *,
 *::before,
@@ -680,7 +681,8 @@ Homepage
   }
 }
 .featured-articles {
-  background-color: var(--blu-04); /*--clr-primary-010*/
+  background-color: color-mix(in hsl shorter hue, var(--grn-03) 20%, var(--red-03));
+  background-color: hsla(66, 50%, 60%, 0.125);
 }
 
 .articles__list {
@@ -759,9 +761,9 @@ Individual article page
 
 @media (min-width: 45em) {
   .snippet {
-    grid-template-areas: "title image" "meta image" "body image" "button image";
+    grid-template-areas: "image title" "image meta" "image body" "image button";
     grid-column-gap: 3em;
-    grid-template-columns: 1fr 40%;
+    grid-template-columns: 40% 1fr;
     grid-template-rows: min-content min-content min-content 1fr;
   }
 }
@@ -835,7 +837,7 @@ Individual article page
   padding: 0.5em 1.75em;
   border-radius: 0.375em;
   align-self: center;
-  justify-self: center;
+  justify-self: start;
   margin-block: 1.5rem 1rem;
 }
 
@@ -902,6 +904,7 @@ article > a > figure > img {
   width: 100%;
 }
 
+/*! #6 _lightbox.scss  */
 /** Lightbox CSS */
 .slbOverlay, .slbWrapOuter, .slbWrap {
   position: fixed;
