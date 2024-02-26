@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en_US">
+<head>
+    <title>Designing the Display Layer and Build Systems</title>
+      <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Language" content="en-us" />
+  <meta name="classification" content="Internet" />
+  <meta name="distribution" content="Global" />
+<meta name="robots" content="index, follow">
+<meta name="robots" content="noimageindex">
+<meta name="view-transition" content="same-origin" />
+
+  <meta name="author" content="Craig Webb">
+  <meta name="description" content="Craig Webb Art – Communications design auxillary website for portfolio and blogs.">
+  <meta name="description" content="Recent work on build systems and design systems.">
+
+  <link rel="icon" href="https://www.craigwebbart.com/favicon-32x32.png" type="image/svg+xml" />
+
+
+
+<!--  add font list -->
+    <!-- Default HTML embed snippet from Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ysabeau:ital,wght@0,1;0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,1;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap" rel="stylesheet">
+
+
+
+
+<!--  add styles list -->
+    
+
+<link rel="stylesheet" href="../css/simpleLightbox.min.css">
+<link rel="stylesheet" href="../css/styles.css">
+
+
+</head>
+<body>
+        <header class="page-header">
+  <div class="container">
+    <div class="page-header__content">
+      <figure class="logo-box-head">
+  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" 
+                   xmlns:xlink="http://www.w3.org/1999/xlink" 
+                   viewBox="0 0 144 36" 
+                   preserveAspectRatio="xMidYMid meet">
+<a xlink:href="https://www.craigwebbart.com" target="_ ">
+<rect fill="#FFCCCC" width="144" height="8"/>
+<rect y="8" fill="#FDFDFD" width="144" height="20"/>
+<rect y="28" fill="#FFCCCC" width="144" height="8"/>
+<g>
+	<path fill="#0088CC" d="M7.054,22.214c-0.605,0.162-1.109,0.234-1.996,0.234c-3.064,0-4.938-1.584-4.938-4.682
+		c0-2.575,1.149-4.285,3.91-4.285c2.56,0,3.286,1.44,3.286,2.809H5.684c0-0.918-0.423-1.782-1.713-1.782
+		c-1.734,0-2.278,1.692-2.278,2.989c0,1.639,0.625,3.925,3.81,3.925c0.343,0,1.028-0.019,1.552-0.181V22.214z"/>
+	<path fill="#0088CC" d="M12.82,13.68h1.371v1.656h0.04c0.282-0.576,1.008-1.854,3.205-1.854v1.314
+		c-2.177,0-3.245,1.603-3.245,3.907v3.547H12.82V13.68z"/>
+	<path fill="#0088CC" d="M27.395,21.116h-0.04c-0.242,0.414-1.189,1.332-2.943,1.332c-1.572,0-2.58-0.864-2.58-2.395
+		c0-1.999,2.902-2.665,4.576-2.665c0.342,0,0.625,0,0.947-0.054c0-0.414,0-1.35-0.061-1.638c-0.222-0.955-1.028-1.188-1.753-1.188
+		c-1.552,0-1.854,0.702-1.956,1.368h-1.532c0.02-1.08,0.826-2.395,3.447-2.395c2.983,0,3.225,1.674,3.225,2.755v6.014h-1.331V21.116
+		z M26.549,18.361c-1.008,0-3.145,0.36-3.145,1.819c0,0.811,0.645,1.242,1.351,1.242c0.867,0,1.834-0.504,2.237-1.332
+		c0.242-0.505,0.363-0.702,0.363-1.729H26.549z"/>
+	<path fill="#0088CC" d="M35.258,9.826h1.814v1.621h-1.814V9.826z M35.48,13.68h1.371v8.57H35.48V13.68z"/>
+	<path fill="#0088CC" d="M50.135,22.268c0,2.431-1.31,3.728-4.072,3.728c-1.492,0-2.278-0.234-2.6-0.288v-1.242
+		c0.141,0.054,1.088,0.504,2.398,0.504c2.479,0,2.903-1.314,2.903-2.845v-1.513h-0.041c-0.201,0.576-0.887,1.639-2.54,1.639
+		c-2.52,0-3.245-2.106-3.245-4.231c0-2.287,0.907-4.537,3.285-4.537c1.633,0,2.338,1.062,2.5,1.603h0.041V13.68h1.371V22.268z
+		 M46.467,21.224c1.653,0,2.298-1.98,2.298-3.421c0-1.333-0.625-3.295-2.258-3.295c-1.451,0-1.995,1.692-1.995,3.529
+		C44.512,19.352,44.834,21.224,46.467,21.224z"/>
+	<path fill="#0088CC" d="M57.011,13.68h1.371l1.753,6.662h0.041l2.298-6.662h1.189l2.318,6.662h0.041l1.733-6.662h1.371l-2.237,8.57
+		h-1.532l-2.257-6.572h-0.041L60.82,22.25h-1.492L57.011,13.68z"/>
+	<path fill="#0088CC" d="M80.839,22.196c-0.585,0.162-1.311,0.252-2.197,0.252c-2.963,0-4.676-1.603-4.676-4.771
+		c0-2.557,1.188-4.195,3.749-4.195c2.257,0,3.346,1.386,3.346,3.259v0.414h-5.523v0.504c0,1.296,0.646,3.763,3.407,3.763
+		c1.068,0,1.451-0.145,1.895-0.234V22.196z M79.488,16.128c0-0.576-0.443-1.62-1.834-1.62c-1.432,0-1.895,1.044-2.016,1.62H79.488z"
+		/>
+	<path fill="#0088CC" d="M87.693,15.102h0.041c0.222-0.612,0.967-1.621,2.6-1.621c2.641,0,3.427,2.358,3.427,4.573
+		c0,2.467-1.108,4.394-3.85,4.394c-3.427,0-3.588-2.61-3.588-3.728V9.826h1.37V15.102z M89.87,21.422
+		c1.714,0,2.318-1.692,2.318-3.403c0-1.638-0.524-3.511-2.116-3.511c-1.714,0-2.379,2.106-2.379,3.799
+		C87.693,19.297,87.854,21.422,89.87,21.422z"/>
+	<path fill="#0088CC" d="M100.414,15.102h0.041c0.222-0.612,0.967-1.621,2.6-1.621c2.641,0,3.427,2.358,3.427,4.573
+		c0,2.467-1.108,4.394-3.85,4.394c-3.427,0-3.588-2.61-3.588-3.728V9.826h1.37V15.102z M102.591,21.422
+		c1.714,0,2.318-1.692,2.318-3.403c0-1.638-0.524-3.511-2.116-3.511c-1.714,0-2.379,2.106-2.379,3.799
+		C100.414,19.297,100.575,21.422,102.591,21.422z"/>
+	<path fill="#0088CC" d="M117.69,21.26h-0.04c-0.303,0.558-0.968,1.188-2.5,1.188c-1.612,0-2.821-0.864-2.821-2.251
+		c0-2.845,4.031-2.863,5.361-2.899v-0.846c0-0.846-0.242-1.566-1.351-1.566c-1.229,0-1.472,0.738-1.472,1.314h-2.177
+		c0-1.639,1.21-2.719,3.648-2.719c2.379,0,3.487,0.918,3.487,2.665v6.104h-2.137V21.26z M115.695,21.044
+		c1.451,0,1.995-1.404,1.995-2.575c-1.451,0-3.185,0.396-3.185,1.549C114.506,20.684,114.929,21.044,115.695,21.044z"/>
+	<path fill="#0088CC" d="M126.702,13.68h2.237v1.584h0.041c0.523-0.828,1.169-1.782,3.104-1.782v2.088
+		c-2.258,0-3.145,0.846-3.145,2.917v3.763h-2.237V13.68z"/>
+	<path fill="#0088CC" d="M143.737,22.304c-0.605,0.09-1.229,0.145-1.835,0.145c-2.54,0-2.942-1.08-2.942-2.358v-5.024h-1.875V13.68
+		h1.875v-2.035l2.237-1.207v3.241h2.842v1.386h-2.842v4.051c0,1.026,0.141,1.927,1.512,1.927c0.363,0,0.705-0.072,1.028-0.145
+		V22.304z"/>
+</g></a>
+</svg></figure>
+	
+<nav>
+  <ul role="list" class="nav-list flex-group">
+    <li><a href="../index.html">Home</a></li>
+    <li><a href="../possibilities.html">Possibilities</a></li>
+    <li><a href="../about/about.html">About</a>
+      <ul>
+        <li><a href="../about/team.html">Team</a></li>
+        <li><a href="../about/privacy.html">Privacy</a></li>
+      </ul></li>
+    <li><a href="../work.html">Work</a></li>
+</ul>
+</nav>  
+    </div>
+  </div>
+</header>
+    <main> 
+
+<!--  <h1>Designing the Display Layer and Build Systems</h1> -->
+
+    
+       
+<article class="main-article lightbox-img">
+<div class="container container--narrow flow">
+  
+    <h1 class="article-title">
+      Designing the Display Layer and Build Systems
+    </h1>
+  <p><span class="snippet__meta"></span> <span class="snippet__meta"> Sunday, February 25, 2024</span></p>
+    <figure class="main-article__figure">
+      <img src="../assets/images/workout.jpeg" alt="Workout, one-handed push-up.">
+      <figcaption>
+        Workout, one-handed push-up.
+      </figcaption>
+    </figure>
+<blockquote>
+<dl>
+  <dt><b>Build Systems</b></dt>
+  <dd>Build systems are programs that transform source code written by engineers into executable programs that can be read by machines.</dd>
+<br>
+  <dt><b>Design Systems</b></dt>
+  <dd>A design system is a collection of reusable components and clear standards intended to manage design at scale using reusable components and patterns to build any number of applications.</dd>
+</dl>
+</blockquote>
+<br>
+Many times I&rsquo;ve written that I am good at design at the display layer. "Display layer design" does not appear in many job descriptions. What does display layer design mean? 
+<p>What I’m saying is that I am good at and care about CSS. I understand the CSS cascade. My combined CSS and HTML &quot;layers&quot; of website design are semantic and well formed.</p>
+<p>I’ve built a library of component prototypes. I organize my CSS into SASS files so that I can quickly target or grab elements or components.</p>
+<p>My semantic, organized code enhances my client’s website’s SEO ranking. Combined with good content, I’ve put client websites on page one of Google.</p>
+<p>I really care about CSS. I spend lots of time on CSS research and development. The last two or five years has seen an incredible surge in new CSS elements and declaration patterns. The new CSS properties are exciting. The bottom-line news is that “you might not need React for that”.</p>
+<p>Creative managers recognize the importance of design systems. Design systems control and enhance company brand development and cohesion. There are many popular technologies to abstract and document design systems. But where the design system rubber hits the road is at the CSS display layer.</p>
+<h2>Build Systems</h2>
+<p>Part of programming and design is creating the tools to use while coding. I have many “build systems”, constructed in Node, that I use or experiment with. To build my code I use various build systems that compile SASS, PostCSS, and JavaScript. I use templates to break HTML pages into components. The components compile with data using JavaScript or PHP.</p>
+<p>Recently I updated my OpenProps ShortStack build system. I also installed a design system by Andy Bell called “CSS Project Boilerplate”.  CSS Project Boilerplate combines CUBE methodology and Tailwind.</p>
+<h2>OpenProps</h2>
+<p>OpenProps is a design system by Adam Argyle. OpenProps breaks CSS elements and declarations down into elemental custom properties. Custom properties are equivalent to design tokens.</p>
+<p>Adam Argyle offers a slew of build systems connected to his OpenProps design system library. A variety of build systems are available. Adam’s build systems combine OpenProps with React, or Vue, or Vite, or PHP. I happen to like ShortStack, which uses Rollup, because it is simple. I’m focused on CSS and HTML design.</p>
+<p>The ShortStack build on Adam’s <a href="https://stackblitz.com/@argyleink" rel="noopener noreferrer nofollow" 
+   target="_blank">StackBlitz Collections site</a> is out of date. I fixed the problem. Rollup 3 and the rollup-terser-plugin were breaking the build system.</p>
+<p>Adam Argyle’s OpenProps build systems install using an NPM module with minified CSS. I inserted the un-minified CSS src files from Adam Argyle’s OpenProps Github repo. They are organized by category. I want to be able to read the CSS while I work.</p>
+<p>I posted my modified ShortStack OpenProps to my Github page.</p>
+<p>Now that I have it working I am exploring the slew of custom properties that Adam has put together. It is an exhaustive array.</p>
+<p>I will build webpages and prototypes using OpenProps. I plan to learn from Adam’s design system. I will incorporate some of it into my own. Some of Adam’s custom property names are verbose. I prefer shorter names.</p>
+<h2>Andy Bell&rsquo;s CSS Project Boilerplate</h2>
+<p>Andy Bell published an article recently. The article, <a href="https://piccalil.li/blog/a-css-project-boilerplate/" rel="noopener noreferrer nofollow" 
+   target="_blank">A CSS project boilerplate</a>, introduces his build system for CSS. Andy Bell, like Adam Argyle, is an important design maven. I am interested in anything he does. I downloaded Andy Bell’s boilerplate, installed and tested it.</p>
+<p>Some interesting and surprising facts about Andy Bell’s CSS Project Boilerplate system:</p>
+<p>First, Andy Bell is including a subset of Tailwind. Sacrilege! Andy says that he has built a JavaScript configuration that weeds out most of the Tailwind code. Actually what I see is a rather small amount of CSS with some few custom properties. I may not have the Tailwind portion working yet.</p>
+<p>Second, The CSS Project Boilerplate has CSS declaration patterns derived from his CUBE design methodology. The code is well documented with comments.</p>
+<p>Andy Bell and Heydon Pickering have co-published a website called <a href="https://every-layout.dev/" rel="noopener noreferrer nofollow" 
+   target="_blank">EveryLayout</a>. It consists of a series of CSS and HTML component patterns.</p>
+<p>So Andy’s CSS Project Boilerplate consists of a subset of Tailwind in service to his CUBE methodology, It is documented with excerpts from Every Layout. Very cool.</p>
+<p>Andy Bell’s CSS Project Boilerplate build system only processes CSS. I plan to add NPM module functions to copy and post HTML files to the distribution folder.</p>
+<p>I am still exploring Andy Bell’s CSS Project Boilerplate. I see the CUBE styles exported but not the Tailwind styles. The Tailwind styles are in JSON. I may need to work on the configuration.</p>
+<p>In parallel with working on the CSS Project Boilerplate, I’ve happened upon numerous articles about Tailwind. Tailwind, although popular with JavaScript developers, is controversial. I will explore issues with Tailwind in a future article.</p>
+<p>Other popular design system libraries include Bootstrap and Material Design. Major companies such as Salesforce and governments including the UK and the US have their own branded design systems.</p>
+<p>I am keen to explore and familiarize myself with others while I build and refine my own.</p>
+    
+  
+</div>
+</article>
+
+
+
+
+    </main>   
+        <footer class="site-footer">
+      <figure class="logo-box-footer">
+  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" 
+  xmlns:xlink="http://www.w3.org/1999/xlink" 
+  viewBox="0 0 144 36" 
+  preserveAspectRatio="xMidYMid meet">
+<a xlink:href="https://www.craigwebbart.com" target="_ ">
+<rect fill="#FFCCCC" width="144" height="8"/>
+<rect y="8" fill="#FDFDFD" width="144" height="20"/>
+<rect y="28" fill="#FFCCCC" width="144" height="8"/>
+<g>
+	<path fill="#0088CC" d="M7.054,22.214c-0.605,0.162-1.109,0.234-1.996,0.234c-3.064,0-4.938-1.584-4.938-4.682
+		c0-2.575,1.149-4.285,3.91-4.285c2.56,0,3.286,1.44,3.286,2.809H5.684c0-0.918-0.423-1.782-1.713-1.782
+		c-1.734,0-2.278,1.692-2.278,2.989c0,1.639,0.625,3.925,3.81,3.925c0.343,0,1.028-0.019,1.552-0.181V22.214z"/>
+	<path fill="#0088CC" d="M12.82,13.68h1.371v1.656h0.04c0.282-0.576,1.008-1.854,3.205-1.854v1.314
+		c-2.177,0-3.245,1.603-3.245,3.907v3.547H12.82V13.68z"/>
+	<path fill="#0088CC" d="M27.395,21.116h-0.04c-0.242,0.414-1.189,1.332-2.943,1.332c-1.572,0-2.58-0.864-2.58-2.395
+		c0-1.999,2.902-2.665,4.576-2.665c0.342,0,0.625,0,0.947-0.054c0-0.414,0-1.35-0.061-1.638c-0.222-0.955-1.028-1.188-1.753-1.188
+		c-1.552,0-1.854,0.702-1.956,1.368h-1.532c0.02-1.08,0.826-2.395,3.447-2.395c2.983,0,3.225,1.674,3.225,2.755v6.014h-1.331V21.116
+		z M26.549,18.361c-1.008,0-3.145,0.36-3.145,1.819c0,0.811,0.645,1.242,1.351,1.242c0.867,0,1.834-0.504,2.237-1.332
+		c0.242-0.505,0.363-0.702,0.363-1.729H26.549z"/>
+	<path fill="#0088CC" d="M35.258,9.826h1.814v1.621h-1.814V9.826z M35.48,13.68h1.371v8.57H35.48V13.68z"/>
+	<path fill="#0088CC" d="M50.135,22.268c0,2.431-1.31,3.728-4.072,3.728c-1.492,0-2.278-0.234-2.6-0.288v-1.242
+		c0.141,0.054,1.088,0.504,2.398,0.504c2.479,0,2.903-1.314,2.903-2.845v-1.513h-0.041c-0.201,0.576-0.887,1.639-2.54,1.639
+		c-2.52,0-3.245-2.106-3.245-4.231c0-2.287,0.907-4.537,3.285-4.537c1.633,0,2.338,1.062,2.5,1.603h0.041V13.68h1.371V22.268z
+		 M46.467,21.224c1.653,0,2.298-1.98,2.298-3.421c0-1.333-0.625-3.295-2.258-3.295c-1.451,0-1.995,1.692-1.995,3.529
+		C44.512,19.352,44.834,21.224,46.467,21.224z"/>
+	<path fill="#0088CC" d="M57.011,13.68h1.371l1.753,6.662h0.041l2.298-6.662h1.189l2.318,6.662h0.041l1.733-6.662h1.371l-2.237,8.57
+		h-1.532l-2.257-6.572h-0.041L60.82,22.25h-1.492L57.011,13.68z"/>
+	<path fill="#0088CC" d="M80.839,22.196c-0.585,0.162-1.311,0.252-2.197,0.252c-2.963,0-4.676-1.603-4.676-4.771
+		c0-2.557,1.188-4.195,3.749-4.195c2.257,0,3.346,1.386,3.346,3.259v0.414h-5.523v0.504c0,1.296,0.646,3.763,3.407,3.763
+		c1.068,0,1.451-0.145,1.895-0.234V22.196z M79.488,16.128c0-0.576-0.443-1.62-1.834-1.62c-1.432,0-1.895,1.044-2.016,1.62H79.488z"
+		/>
+	<path fill="#0088CC" d="M87.693,15.102h0.041c0.222-0.612,0.967-1.621,2.6-1.621c2.641,0,3.427,2.358,3.427,4.573
+		c0,2.467-1.108,4.394-3.85,4.394c-3.427,0-3.588-2.61-3.588-3.728V9.826h1.37V15.102z M89.87,21.422
+		c1.714,0,2.318-1.692,2.318-3.403c0-1.638-0.524-3.511-2.116-3.511c-1.714,0-2.379,2.106-2.379,3.799
+		C87.693,19.297,87.854,21.422,89.87,21.422z"/>
+	<path fill="#0088CC" d="M100.414,15.102h0.041c0.222-0.612,0.967-1.621,2.6-1.621c2.641,0,3.427,2.358,3.427,4.573
+		c0,2.467-1.108,4.394-3.85,4.394c-3.427,0-3.588-2.61-3.588-3.728V9.826h1.37V15.102z M102.591,21.422
+		c1.714,0,2.318-1.692,2.318-3.403c0-1.638-0.524-3.511-2.116-3.511c-1.714,0-2.379,2.106-2.379,3.799
+		C100.414,19.297,100.575,21.422,102.591,21.422z"/>
+	<path fill="#0088CC" d="M117.69,21.26h-0.04c-0.303,0.558-0.968,1.188-2.5,1.188c-1.612,0-2.821-0.864-2.821-2.251
+		c0-2.845,4.031-2.863,5.361-2.899v-0.846c0-0.846-0.242-1.566-1.351-1.566c-1.229,0-1.472,0.738-1.472,1.314h-2.177
+		c0-1.639,1.21-2.719,3.648-2.719c2.379,0,3.487,0.918,3.487,2.665v6.104h-2.137V21.26z M115.695,21.044
+		c1.451,0,1.995-1.404,1.995-2.575c-1.451,0-3.185,0.396-3.185,1.549C114.506,20.684,114.929,21.044,115.695,21.044z"/>
+	<path fill="#0088CC" d="M126.702,13.68h2.237v1.584h0.041c0.523-0.828,1.169-1.782,3.104-1.782v2.088
+		c-2.258,0-3.145,0.846-3.145,2.917v3.763h-2.237V13.68z"/>
+	<path fill="#0088CC" d="M143.737,22.304c-0.605,0.09-1.229,0.145-1.835,0.145c-2.54,0-2.942-1.08-2.942-2.358v-5.024h-1.875V13.68
+		h1.875v-2.035l2.237-1.207v3.241h2.842v1.386h-2.842v4.051c0,1.026,0.141,1.927,1.512,1.927c0.363,0,0.705-0.072,1.028-0.145
+		V22.304z"/>
+</g></a>
+</svg></figure>
+  <p class="copyright">&copy; 2005 &ndash; <script type='text/javascript'>if (typeof(getCopyrightDate)=='function') document.write(getCopyrightDate(2014, null, '-')); else document.write((new Date()).getFullYear());</script> Craig Webb Art. &nbsp;All&nbsp;Rights&nbsp;Reserved.</p>
+</footer>
+
+</body>
+
+  <script src="../assets/js/simpleLightbox.min.js"></script>
+  <script>
+    new SimpleLightbox({elements: '.lightbox-img a'});
+    // or if using jQuery
+    // $('.imageGallery1 a').simpleLightbox();
+    </script>
+
+</html>
