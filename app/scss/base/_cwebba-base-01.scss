@@ -229,81 +229,85 @@ h1, h2, h3, h4, h5, h6 {
      and add margin to the top for proper
      spacing */
   
-     .flow > *:where(:not(:first-child)) {
-      margin-top: var(--flow-spacer, 1em);
-    }
-    
-    .container {
-      margin-inline: auto;
-      padding-inline: 1.5em;
-      max-width: 72rem;
-    }
-    
-    .container--narrow {
-      max-width: 65rem;
-    }
-    
-    .flex-group {
-      display: flex;
-      flex-wrap: wrap;
-      gap: var(--gap, 1em);
-    }
-    
-    .text-center {
-      text-align: center;
-    }
-      
-  /* typgraphy */
-  
-  .article-title,
-  .section-title {
-    color: var(--red-09); /*--clr-primary-140*/
-  }
-  
-  .article-title {
-    font-size: var(--fs-700);
-  }
-  
-  .section-title {
-    font-size: var(--fs-600);
-  }
-  
-  /* //////////////////////
-    Header
-    /////////////////////// */
-  
-    .page-header {
-      padding: 1em 0;
-      background-image: url(/assets/images/retina-dust.png);
-    }
-    
-    .page-header__content {
-      display: flex;
-      justify-content: space-between;
-    }
+  .flow > *:where(:not(:first-child)) {
+  margin-top: var(--flow-spacer, 1em);
+}
 
-    @media (max-width: 720px) {
-      .page-header__content {
-        flex-direction: column;
-        align-items: center;
-      }
-    }
+.container {
+  margin-inline: auto;
+  padding-inline: 1.5em;
+  max-width: 72rem;
+}
 
-    .nav-list {
-      margin: 0 1em 0 0;
-      padding: 0;
-    }
-    
-    .nav-list a {
-      color: var(--blu-09);
-      text-decoration: none;
-    }
-    
-    .nav-list a:focus,
-    .nav-list a:hover {
-      color: var(--blu-07); /* --clr-primary-080 */
-      text-decoration: underline;
-    }
+.container--narrow {
+  max-width: 65rem;
+}
+
+.flex-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gap, 1em);
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.text-center {
+  text-align: center;
+}
+  
+/* typgraphy */
+
+.article-title,
+.section-title {
+color: var(--red-09); /*--clr-primary-140*/
+}
+
+.article-title {
+font-size: var(--fs-700);
+}
+
+.section-title {
+font-size: var(--fs-600);
+}
+
+/* //////////////////////
+Header
+/////////////////////// */
+
+.page-header {
+  padding: 1em 0;
+  background-image: url(/assets/images/retina-dust.png);
+}
+
+.page-header__content {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 720px) {
+  .page-header__content {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.nav-list {
+  margin: 0 1em 0 0;
+  padding: 0;
+}
+
+.nav-list a {
+  color: var(--blu-09);
+  text-decoration: none;
+}
+
+.nav-list a:focus,
+.nav-list a:hover {
+  color: var(--blu-07); /* --clr-primary-080 */
+  text-decoration: underline;
+}
 
 nav ul a {
   color: var(--blu-09); /* --clr-neutral-900*/
