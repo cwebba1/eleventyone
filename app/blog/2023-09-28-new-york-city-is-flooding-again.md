@@ -2,7 +2,7 @@
 title: New York City is flooding again
 author: Craig Webb
 date: 2023-09-29
-tags: ['post', 'featured', 'letters']
+tags: ['post', 'letters']
 image: assets/images/nyc-ophelia-flood.jpg
 imageAlt: Tropical storm Ophelia flooding New York City
 img01: 900 /1200

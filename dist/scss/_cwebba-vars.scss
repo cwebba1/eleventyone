@@ -1,0 +1,90 @@
+/** –cwebba-vars.scss */
+:root {
+
+
+    --clr-primary-010: #f8feeb;
+    --clr-primary-020: #eefff2;
+    --clr-primary-030: #e7fefa;
+    --clr-primary-040: #aecbd4;
+    --clr-primary-050: #8296ae;
+    --clr-primary-060: #646182;
+    --clr-primary-070: #4a304d;
+    --clr-primary-080: #2b0315;
+    --clr-primary-090: #4f0d25;
+    --clr-primary-100: #771b33;
+    --clr-primary-110: #a12b3d;
+    --clr-primary-120: #cd3c41;
+    --clr-primary-130: #fa503d;
+    --clr-primary-140: #fc6f38;
+    --clr-primary-150: #fb8a40;
+    --clr-primary-160: #f8a253;
+    --clr-primary-170: #f4b86e;
+    --clr-primary-180: #f0cc8c;
+    --clr-primary-190: #eedeac;
+    --clr-primary-200: #f0edcc;
+    
+    /*! BRAND: */
+    --brand-100: #771b33;
+    --brand-200: #a12b3d;
+    --brand-300: #cd3c41;
+    --brand-400: #fa503d;
+    --brand-500: #fc6f38;
+    --brand-600: #fb8a40;
+    --brand-700: #f8a253;
+    --brand-800: #f4b86e;
+    --brand-900: #f0cc8c;
+        
+    
+    --fs-300: 0.9375rem;
+    --fs-400: 1.0625rem;
+    --fs-500: 1.375rem;
+    --fs-600: 1.875rem;
+    --fs-700: 2rem;
+
+    --ff-body: "Ysabeau", "Roboto", sans-serif;
+    --ff-heading: "Outfit", sans-serif;
+    /* "Taviraj", "Playfair Display", serif */
+    // font-style:normal;
+
+    --fw-100: 100;
+    --fw-200: 200;
+    --fw-300: 300;
+    --fw-400: 400;
+    --fw-500: 500;
+    --fw-600: 600;
+    --fw-700: 700;
+    --fw-800: 800;
+    --fw-900: 900;
+
+--fw-1: 100;
+--fw-2: 200;
+--fw-3: 300;
+--fw-4: 400;
+--fw-5: 500;
+--fw-6: 600;
+--fw-7: 700;
+--fw-8: 800;
+--fw-9: 900;
+
+--font-letterspacing-0: -.05em;
+--font-letterspacing-1: .025em;
+--font-letterspacing-2: .050em;
+--font-letterspacing-cwebba: 0.0625em;
+--font-letterspacing-3: .075em;
+--font-letterspacing-4: .150em;
+--font-letterspacing-5: .500em;
+--font-letterspacing-6: .750em;
+--font-letterspacing-7: 1em;
+
+--typography-spacing-vertical: calc(1em + 0.5rem);
+
+//--brand: var(--golf-green);
+}
+
+:where(html) {
+    --font-sans: "Ysabeau", "Outfit", "Roboto", "Open Sans", system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans, Arial, "Helvetica Neue", Helvetica,sans-serif;
+    --font-serif: "Taviraj", "Lora", ui-serif,serif;
+    --font-brand-sans: "Ysabeau", "Ubuntu", Verdana, "Corbel", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+    --font-mono: Dank Mono,Operator Mono,Inconsolata,Fira Mono,ui-monospace,SF Mono,Monaco,Droid Sans Mono,Source Code Pro,monospace;
+    --rem:18px;
+}

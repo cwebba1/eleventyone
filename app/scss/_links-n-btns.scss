@@ -1,0 +1,346 @@
+/*! links-and-buttons.scss 030224 */ 
+/*! links-and-buttons-04.css */ 
+
+/* Globals Styles */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  /*  
+  :root {
+      --primary: #0676ed;
+      --background: #222b45;
+      --warning: #f2a600;
+      --success: #12c99b;
+      --error: #e41749;
+      --dark: #151a30;
+  }
+
+  html {
+    --font-lineheight-3:  1.5;
+    --blu-12: hsla(120,87%,9%);
+    --fnt-wt-4: font-weight: 400;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  }
+
+  body {
+    --fnt-wt-4: font-weight: 400;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 1rem;
+    font-weight: 400;
+    line-height: inherit;
+  }
+
+  header {
+    max-width: 1200px;
+    padding-inline:2rem;
+    margin: 0 auto;
+  
+  }
+
+main {   
+  max-width: 1200px;
+  margin: 0 auto;
+  border:1px solid hsla(209, 100%, 92%, 0.5);
+  padding-inline:2rem;
+  margin-bottom:5rem;
+  }
+
+.grid { 
+  display:grid; 
+  gap: 1rem;
+  }
+  
+  @media(width > 760px) {
+  .grid { grid-template-columns:repeat(auto-fit, minmax(calc(33% - 1.5em), 1fr));
+  }
+  }
+  /*
+  @media(width > 1220px) {
+  .grid { 
+  grid-template-columns:repeat(auto-fit, minmax(calc(50% - 3em), 1fr));
+  }
+  }*/
+
+/*! Reset Styles */
+
+/* A elements that don't have a class get default styles */
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+  color: currentColor;
+}
+  
+  
+  a, area, button, [role="button"], input:not([type="range"]), label, select, summary, textarea {
+    touch-action: manipulation;
+  }
+
+
+/*! Link Styles */
+
+a {
+  --btn-clr: ;
+  --btn-bkgrnd: ;
+/*  color: #007bff;*/
+  color: var(--btn-clr, hsla(210, 100%, 50%, 1));
+  text-decoration: none;
+  background-color: var(--btn-bkgrnd, transparent);
+  -webkit-text-decoration-skip: objects;
+}
+
+
+a.btn { 
+/*  --btn-clr-11: ;
+  --btn-clr-12: ;
+  --btn-bkgnd-clr: ;
+  --btn-gradient: ;
+  --btn-bdr-clr: ;
+  --btn-bx-shadow */
+  /* BS4 .btn Declarations */
+  color: var(--btn-clr-11, hsla(227,71.7%,20%, 1)); /* was #333;*/
+  display: inline-block;
+  font-weight: var(--fnt-wt-4);
+  text-align: left;
+  vertical-align: middle;
+  border: 1px solid var(--btn-bdr-clr, transparent);
+  padding: 0.375rem 0.75rem;
+  font-size: inherit;
+  line-height: inherit;
+  border-radius: 0.25rem;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#eaf3fc+0,f4f9ff+15,f4f9ff+78,e8f0f9+100 */
+  background: var(--btn-bkgnd-clr, hsla(210, 75%, 95%, 1)); 
+  /*#eaf3fc; Old browsers */
+  background-image: var(--btn-gradient, linear-gradient(90deg, hsla(210,75%,95%,1) 0%,hsla(213,100%,98%,1) 15%,hsla(213,100%,98%,1) 78%,hsla(212,58%,95%,1) 100%));
+  box-shadow: var(--btn-bx-shadow, transparent);
+
+  transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  /*  white-space: nowrap;*/
+  /* user-select: none; */
+}
+
+a.btn:focus {
+  outline: none;
+}
+
+a.btn:last-of-type  { 
+  margin-right:0;
+}
+
+
+a.btn:hover {
+  text-decoration: none;
+  color: var(--btn-clr-12, hsla(240,87%,9%, 1));
+  background-color: var(--btn-bkgnd-clr, hsla(209, 100%, 92%, 1)); /*#D6EBFF;*/
+  border-color: var(--btn-bdr-clr, hsla(211, 100%, 70%, 1)); 
+  /*#66B0FF;*/
+}
+    
+a.btn:focus-visible { 
+  --btn-bdr-clr: hsla(211, 100%, 50%, 0.25);
+  text-decoration: none;
+  outline: 0;
+  box-shadow: 0 0 0.325rem 0.1rem var(--btn-bdr-clr);
+}
+
+a.btn.picked {
+  color: var(--btn-clr-12, hsla(240,87%,9%, 1));
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e5fceb+0,c6f2d1+61,c9edd2+100 */
+  background-image: var(--btn-bkgnd-clr, linear-gradient(180deg, hsla(136,79%,95%,1) 0%,hsla(135,63%,86%,1) 61%,hsla(135,50%,86%,1) 100%));
+  border: 1px solid var(--btn-bdr-clr, transparent);
+}
+    
+a.btn.picked:hover {
+  color: var(--btn-clr-12, hsla(240,87%,9%, 1));
+  background-color: var(--btn-bkgnd-clr, hsla(135, 50%, 86%, 1)); /*#C9EDD2;*/
+  border: 1px solid var(--btn-bdr-clr, hsla(193, 82%, 63%, 1));
+}
+
+/* 022324 11pm This still needs work */
+a.btn.picked:focus-visible { 
+--btn-bx-shadow: 0 0 0.325rem 0.1rem hsla(135, 82%, 63%, 0.75);
+}
+
+
+a.btn[data-alert="selected"] {
+  --btn-bx-shadow: 0 0 0.325rem 0.1rem hsla(135, 82%, 63%, 0.325);
+}
+
+a.btn[data-alert='success'] {
+  background: linear-gradient(0deg, hsla(136,79%,95%,1) 0%,hsla(135,63%,86%,1) 61%,hsla(135,50%,86%,1) 100%);
+}
+
+a.btn[data-alert='success']:hover {
+  background: var(--primary);
+  background: linear-gradient(to bottom,  hsla(136,50%,70%,1) 0%,hsla(135,50%,70%,1) 0%,hsla(135,48%,63%,1) 66%,hsla(134,33%,56%,1) 100%);
+}
+
+a.btn[data-alert='danger'] {
+  background: linear-gradient(0deg, hsla(33,87.8%,71.2%, 1) 0%,hsla(21,98.9%,64.3%, 1) 61%,hsla(9,100%,63.9%, 1) 100%);
+}
+
+a.btn[data-alert='danger']:hover {
+  background: linear-gradient(0deg, hsla(21,98.9%,64.3%, 1) 0%, hsla(9,100%,63.9%, 1)61%,hsla(3,60.5%,54.3%, 1));
+}
+
+
+a.btn[data-alert='warning'] {
+  background: linear-gradient(0deg, hsla(56,65.5%,82.9%, 1) 0%,hsla(51,71%,75.7%, 1) 61%,hsla(51,71%,75.7%, 1));
+  --btn-bdr-clr: hsla(33,87.8%,71.2%, 1);
+}
+
+a.btn[data-alert='warning']:hover {
+  background: linear-gradient(0deg, hsla(33,87.8%,71.2%, 1) 0%,hsla(47,80.4%,63.9%, 1) 61%,hsla(47,86.7%,50%, 1) 100%);
+  --btn-bdr-clr: hsla(44,86.9%,41.8%, 1);
+}
+
+a.btn[data-alert='info'] {
+  background: linear-gradient(0deg, hsla(205,86.7%,82.4%, 1) 0%, hsla(207,88.8%,75.5%, 1) 61%, hsla(211,89.6%,66.1%, 1) 100%);
+}
+
+a.btn[data-alert='info']:hover {
+  background: linear-gradient(0deg, hsla(207,88.8%,75.5%, 1) 0%, hsla(211,89.6%,66.1%, 1)61%,hsla(213,88.9%,61%, 1));
+  --btn-bdr-clr: hsla(216,56.9%,50%, 1);
+}
+
+
+/*!    *   *   [ BUTTON STYLES ]   *   *   */
+
+button {
+/*  --btn-clr: ;
+--btn-bkgrnd: ;
+color: #007bff;*/
+color: var(--btn-clr, hsla(210, 100%, 50%, 1));
+text-decoration: none;
+background-color: var(--btn-bkgrnd, transparent);
+-webkit-text-decoration-skip: objects;
+color: hotpink;
+}
+
+button.btn { 
+/*  --btn-clr-11: ;
+  --btn-clr-12: ;
+  --btn-bkgnd-clr: ;
+  --btn-gradient: ;
+  --btn-bdr-clr: ;
+  --btn-bx-shadow */
+  /* BS4 .btn Declarations */
+  color: var(--btn-clr-11, hsla(227,71.7%,20%, 1));
+  display: inline-block;
+  font-weight: var(--fnt-wt-4);
+  text-align: left;
+  vertical-align: middle;
+  border: 1px solid var(--btn-bdr-clr, transparent);
+  padding: 0.375rem 0.75rem;
+  font-size: inherit;
+  line-height: inherit;
+  border-radius: 0.25rem;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#eaf3fc+0,f4f9ff+15,f4f9ff+78,e8f0f9+100 */
+  background: var(--btn-bkgnd-clr, hsla(210, 75%, 95%, 1)); 
+  background-image: linear-gradient(90deg, hsla(210,75%,95%,1) 0%,hsla(213,100%,98%,1) 15%,hsla(213,100%,98%,1) 78%,hsla(212,58%,95%,1) 100%);
+  box-shadow: var(--btn-bx-shadow, transparent);
+  transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  /*  white-space: nowrap;*/
+  /* user-select: none; */
+}
+
+button.btn:focus {
+  outline: none;
+}
+
+button.btn:last-of-type  { 
+  margin-right:0;
+}
+
+button.btn:hover {
+  text-decoration: none;
+  color: var(--btn-clr-12, hsla(240,87%,9%, 1));
+  background-color: var(--btn-bkgnd-clr, hsla(209, 100%, 92%, 1));
+  border-color: var(--btn-bdr-clr, hsla(211, 100%, 70%, 1)); 
+}
+    
+button.btn:focus-visible { 
+  --btn-bdr-clr: hsla(211, 100%, 50%, 0.25);
+  text-decoration: none;
+  outline: 0;
+  box-shadow: 0 0 0.325rem 0.1rem var(--btn-bdr-clr);
+}
+
+button.btn.picked {
+  color: var(--btn-clr-12, hsla(240,87%,9%, 1));
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e5fceb+0,c6f2d1+61,c9edd2+100 */
+  background-image: var(--btn-bkgnd-clr, linear-gradient(180deg, hsla(136,79%,95%,1) 0%,hsla(135,63%,86%,1) 61%,hsla(135,50%,86%,1) 100%));
+  border: 1px solid var(--btn-bdr-clr, transparent);
+}
+    
+button.btn.picked:hover {
+  color: var(--btn-clr-12, hsla(240,87%,9%, 1));
+  background-color: var(--btn-bkgnd-clr, hsla(135, 50%, 86%, 1)); /*#C9EDD2;*/
+  border: 1px solid var(--btn-bdr-clr, hsla(193, 82%, 63%, 1));
+}
+
+/* 022324 11pm This still needs work */
+button.btn.picked:focus-visible { 
+--btn-bx-shadow: 0 0 0.325rem 0.1rem hsla(135, 82%, 63%, 0.75);
+}
+
+
+button.btn[data-alert="selected"] {
+  --btn-bx-shadow: 0 0 0.325rem 0.1rem hsla(135, 82%, 63%, 0.325);
+}
+
+button.btn[data-alert='success'] {
+    background: linear-gradient(0deg, hsla(136,79%,95%,1) 0%,hsla(135,63%,86%,1) 61%,hsla(135,50%,86%,1) 100%);
+}
+
+button.btn[data-alert='success']:hover {
+  background: var(--primary);
+  background: linear-gradient(to bottom,  hsla(136,50%,70%,1) 0%,hsla(135,50%,70%,1) 0%,hsla(135,48%,63%,1) 66%,hsla(134,33%,56%,1) 100%);
+}
+
+button.btn[data-alert='danger'] {
+  background: linear-gradient(0deg, hsla(33,87.8%,71.2%, 1) 0%,hsla(21,98.9%,64.3%, 1) 61%,hsla(9,100%,63.9%, 1) 100%);
+}
+
+button.btn[data-alert='danger']:hover {
+  background: linear-gradient(0deg, hsla(21,98.9%,64.3%, 1) 0%, hsla(9,100%,63.9%, 1)61%,hsla(3,60.5%,54.3%, 1));
+}
+
+
+button.btn[data-alert='warning'] {
+  background: linear-gradient(0deg, hsla(56,65.5%,82.9%, 1) 0%,hsla(51,71%,75.7%, 1) 61%,hsla(51,71%,75.7%, 1));
+  --btn-bdr-clr: hsla(33,87.8%,71.2%, 1);
+}
+
+button.btn[data-alert='warning']:hover {
+  background: linear-gradient(0deg, hsla(33,87.8%,71.2%, 1) 0%,hsla(47,80.4%,63.9%, 1) 61%,hsla(47,86.7%,50%, 1) 100%);
+  --btn-bdr-clr: hsla(44,86.9%,41.8%, 1);
+}
+
+button.btn[data-alert='info'] {
+  background: linear-gradient(0deg, hsla(205,86.7%,82.4%, 1) 0%, hsla(207,88.8%,75.5%, 1) 61%, hsla(211,89.6%,66.1%, 1) 100%);
+}
+
+button.btn[data-alert='info']:hover {
+  background: linear-gradient(0deg, hsla(207,88.8%,75.5%, 1) 0%, hsla(211,89.6%,66.1%, 1)61%,hsla(213,88.9%,61%, 1));
+  --btn-bdr-clr: hsla(216,56.9%,50%, 1);
+}
+
+
+button.btn[data-alert]:focus-visible {
+  text-decoration: none;
+  outline: 0;
+  box-shadow: var(--btn-bx-shadow, 0 0 0.325rem 0.1rem hsla(211, 100%, 50%, 0.25));
+}
+
+.alert-primary {
+  background: var(--primary);
+}
+.alert-dark {
+  background: var(--dark);
+}
+.alert-error {
+  background: var(--error);
+}
+  
