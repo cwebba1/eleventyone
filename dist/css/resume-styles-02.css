@@ -1,0 +1,307 @@
+/* resume-styles-02.css 082024 */
+/* resume-styles.css 051024 */
+/* _fonts.scss 040624 */
+/* From: 032324 cwebba-font-test-04.css */
+@charset "UTF-8";
+  
+  @font-face {
+    font-family: 'Ubuntu Mono variable';
+    font-style: normal;
+    font-weight: 100  800; /*  min and max value for the weight axis */
+    src: url(fonts/UbuntuMono[wght]-latin-v0.869.woff2) 
+    format('woff2-variations');
+    }
+  
+  @font-face {
+    font-family: "Open Sans";
+    font-stretch: 100%; /* Note that font-stretch is a % of normal width */
+    font-optical-sizing: auto;
+    font-style: normal; /* See note below */
+    font-weight: 300  800;
+    src: url('fonts/OpenSans-VariableFont_wdth,wght.woff2') format('woff2');
+  }
+    
+  @font-face {
+  font-family: "Open Sans";
+  font-stretch: 100%; /* Note that font-stretch is a % of normal width */
+  font-optical-sizing: auto;
+  font-style: italic; /* See note below */
+  font-weight: 300  800;
+  src: url('fonts/OpenSans-Italic-VariableFont_wdth,wght.woff2') format('woff2');
+  }
+
+  /* This declaration sets the order of layers, regardless of appearence in the cascade. Support is first in cascade. Demo is next and overides support */
+  @layer support, demo;
+  
+
+
+/* The demo layer holds the guts of the prototype. It has priority because of the @layer statement above. */
+@layer demo {
+
+p {
+font-weight:400;
+font-size: 16px ; /* var(--step--2) not 0.875rem*/
+line-height: 1.375;
+margin: 0 0 var(--step--3) 0;
+}
+
+p:last-of-type { 
+margin-bottom:1.5em;
+}
+
+li {
+font-weight:400;
+font-size: var(--step-0) ; /* not 0.875rem*/
+list-style-position: inside;
+}
+
+strong {
+font-weight:600;
+}
+
+/*!
+2/16 = 0.125
+3/16 = 0.1875
+4/16 = 0.25
+5/16 = 0.3125
+6/16 = 0.375
+7/16 = 0.4375
+8/16 = 0.5
+9/16 = 0.5625
+10/16 = 0.625
+11/16 = 0.6875
+12/16 = 0.75
+13/16 = 0.8125
+14/16 = 0.875
+15/16 = 0.9375
+18/16 = 1.125
+19/16 = 1.1875
+20/16 = 1.25
+22/16 = 1.375
+*/
+
+/*! LINKS */
+
+a { 
+/*color: var(--midnight-blue);*/
+color: #004477;
+color:hsla(206, 100%, 23%, 1);
+font-size: inherit;
+/*font-size: 1rem;*/
+line-height: inherit;
+text-decoration: none;
+vertical-align:baseline; 
+margin:0; 
+padding:0; 
+border: 0;
+outline: 0;
+background:transparent; 
+word-wrap: break-word;
+overflow-wrap: break-word;
+transition: 0.2s color linear;
+}
+
+a:focus { 
+outline: 0;
+}
+a:hover, a:active { outline: none; }
+
+a:focus, a:hover { color:#0066CC; /* var(--royal-blu);*/
+text-decoration: underline; 
+}
+
+a:visited {color: #335577; /* var(--visitation-blu); grey blue #335577;*/
+text-decoration: none;
+}/* grey blue */
+
+a:active { text-decoration: underline; 
+color: #AC3415; /* ,var(--redskin) #900000, #AC3415; */
+}
+
+
+/*! Headers */
+
+h1, h2, h3, h4, h5, h6,  blockquote {
+/*  font-family: var(--bod-ft), "Open Sans", var(--system-ui), sans-serif;
+  color:black; /* var(--hdr-brn);#8c4103 hsla(27, 96%, 28%, 1)*/
+  font-weight: 501;
+  /* letter-spacing: -0.0625em; from prototype 032424 */
+}
+
+h1 { font-size: var(--step-4); line-height:1.2em; margin-bottom:0.35em; margin-top:0; }
+
+h2 { font-size:var(--step-3);line-height:1.5em; margin-bottom:.2em; }
+
+h3 { font-size:var(--step-2);line-height:1.25em; margin-bottom:.35em; }
+
+h4 { font-size:var(--step-1);line-height:1.25em; margin-bottom:.35em; }
+
+h5 { margin-top:.5em;
+  font-size:var(--step-0);line-height:1.25em; margin-bottom:.35em; }
+
+h6 { font-size:var(--step--1);line-height:1.25em; margin-bottom:.25em;
+font-weight:600;
+  margin-top: 0; }
+
+blockquote {
+color: var(--bdy-brn); /* hsla(27, 100%, 7%, 1) */
+font-size:1.125em;
+font-style:italic;
+line-height: 1.375em;
+  background:hsla(150, 40%, 70%, .3);
+  padding: 0.25em 1% 0.375em 2%;
+  border-radius: 0.375em;
+margin: 0 0 0.5em 0;
+}
+
+
+/* blockquote-big class for wordpress span to avoid wordpress p in blockquote. add to span element */
+.blockquote-big {
+/*  font-family: var(--head-ft), 'Ubuntu variable', Verdana, Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", "Verdana Ref", sans-serif; */
+  font-style: italic;
+  color: var(--bdy-brn);
+  font-weight: 800;
+  font-size: 1.125em;
+  line-height: 1.375em;
+  letter-spacing: 0.1em; /* OR 0.0625em*/
+  background:hsla(150, 40%, 70%, .3);
+  padding: 0.25em 1% 0.375em 2%;
+  margin: 1.25em 0 1.375em 0;
+  border-radius: 0.375em;
+}
+/* color: #8C4103; #625550; = color:hsla(15, 10%, 35%, 1); was blockquote color*/
+
+/* This is to fix WordPress p=blockquote bug */
+p.blockquote-big { 
+  font-weight: 400;
+  color: var(--bdy-brn);
+  background:hsla(150, 40%, 70%, .3);
+}
+
+aside, article, #leftnav, blockquote.big {
+  -moz-border-radius: .375em;
+  -webkit-border-radius: .375em;
+border-radius: .375em;
+}
+
+blockquote.big h4 {
+  padding:0;
+  margin: 0 0 0.125em 0;
+  }
+
+blockquote.big p {
+  padding:0;
+  margin: 0 0 0.5em 0;
+  }
+
+.cvr-let {
+  margin-top:2rem;
+  margin-bottom:0;
+  max-width:72ch;
+  }
+
+} /* END Demo Layer*/
+
+
+@layer support {
+
+
+/* The @property declaration is outside the :root (?) 
+@property 
+--brand {
+syntax: "<color>";
+inherits: false;
+initial-value: lch(from red l c var(--hue));
+}*/
+
+
+/* Same as html {} and :root {} with a lower specificity*/
+& {
+p {color:black;}
+}
+
+:root {
+    --system-ui: system-ui, "Segoe UI", "Roboto", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  
+    --monospace-font : 'Ubuntu Mono variable', 'Monaco', "andale mono", "lucida console", "DejaVu Sans Mono", monospace;
+
+  --bod-ft:"Open Sans", var(--system-ui), sans-serif;
+  --head-ft:"Open Sans", var(--system-ui), sans-serif;
+  --mono-ft:"Ubuntu Mono variable";
+  line-height:1.5;
+
+/* @link https://utopia.fyi/type/calculator?c=320,16,1.125,1240,16,1.2,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
+
+  --step-5: clamp(1.802rem, 1.5633rem + 1.1935vi, 2.4883rem);
+  --step--4: clamp(0.4823rem, 0.6737rem + -0.247vi, 0.6243rem);
+  --step--3: clamp(0.5787rem, 0.7453rem + -0.215vi, 0.7023rem);
+  --step--2: clamp(0.6944rem, 0.8234rem + -0.1664vi, 0.7901rem);
+  --step--1: clamp(0.8333rem, 0.9082rem + -0.0966vi, 0.8889rem);
+  --step-0: clamp(1rem, 1rem + 0vi, 1rem);
+  --step-1: clamp(1.125rem, 1.0989rem + 0.1304vi, 1.2rem);
+  --step-2: clamp(1.2656rem, 1.205rem + 0.3033vi, 1.44rem);
+  --step-3: clamp(1.4238rem, 1.318rem + 0.529vi, 1.728rem);
+  --step-4: clamp(1.6018rem, 1.4377rem + 0.8205vi, 2.0736rem);
+  --step-5: clamp(1.802rem, 1.5633rem + 1.1935vi, 2.4883rem);
+
+} /* END root*/
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+body, nav, ul, li, a  {
+  margin: 0; padding: 0;
+}
+html {
+  font-family : 'Open Sans', 'source-sans-pro', Arial, 'Helvetica Neue', Helvetica, 'Frutiger', "Myriad Pro", var(--system-ui), sans-serif;
+  font-size: 100%;
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-tab-size: 4;
+  tab-size: 2;
+  min-height: 100%;
+  text-rendering: optimizeLegibility;}
+
+html:focus-within {
+  scroll-behavior: smooth;
+  }
+
+body {
+  font-weight: 400;
+  line-height: 1.5;
+  text-rendering: optimizeSpeed;
+  -webkit-font-smoothing: antialiased;
+  color: black; /* hsl(27, 100%, 7%); */
+  text-shadow: rgba(0, 0, 0, 0.01) 0 0 1px;
+  transition: all 0.5s ease-in;
+}
+
+main { max-width:72ch;
+border: 1px solid transparent;
+margin:3rem auto;
+  }
+
+} /* END Support*/
+
+
+
+

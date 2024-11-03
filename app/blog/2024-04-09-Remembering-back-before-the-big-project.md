@@ -8,26 +8,30 @@ imageAlt: A meteor streaking through the sky above Chelyabinsk in 2013.
 description: What was I doing before the big project? Remember what I was working on. . . 
 templateEngineOverride: njk,md
 ---
-This morning I got on my computer and started my day by reading tutorials. Something I read triggered me to look for my recent Links and Buttons prototype project.
+This morning I started my day by reading tutorials on my computer. I read an article that made me look through my recent prototype files for my Links and Buttons project. 
 
-I had completely forgotten about this project. I did a lot of research and I want to write about links and buttons. I found a description embedded into the final prototype that is a kernel of the article that I want to write.
+I had forgotten about the Links and Buttons project. I did lots of research. I want to write about links and buttons. 
 
-Recently I've written many articles. I had a nagging feeling that I wrote an article that I lost, or that I wanted to write.
+In March I delved into a deep dive into my WordPress CSS code and typography. My work on my code base required intense research and consistent concentration. The typography refactor project took way longer than expected.
 
-While looking at my Links and Buttons prototype I opened more tutorials to see. I landed on a LinkedIn page comparing aria attributes and data attributes. [The LinkedIn page](https://www.linkedin.com/advice/0/how-do-you-choose-between-data-attributes-aria-accessibility) invites me to "add to the discussion". I have something to contribute here.
+Long projects affect my connection to other projects. I've lost the thread of other work that I was doing. Now I need to pick up the threads of previous projects.
 
-The LinkedIn conversation is a little off message from what I have to say. I dug into Aria a little more. My key concern has to do with CSS attributes and selectors.
+I've written many articles recently. I had a nagging feeling that I wrote an article that I lost, or that I wanted to write.
 
-My prototype is "Links and Buttons". The difference is that buttons connect to JavaScript functions and links go somewhere. I used data attributes in my prototype to make variations of the buttons. I am thinking of revisiting the project to add aria labels for the links. From what I have read a simple "ID" is enough of a label for aria and CSS selectors.
+A description I found embedded into the Links and Buttons prototype is the kernel of my article.
 
-In March I dropped into a deep dive into my WordPress CSS code base. It took way longer that I expected. Long projects affect my connection to other projects.
+Links and buttons may look the same but they are different. Buttons connect to JavaScript functions. Links go somewhere.
 
-I am proud of the work I did on my code base. It required intense research and consistent concentration. But I've lost the thread of what I was doing. Now I need to pick up the threads of previous projects.
+A key interest I have for links and buttons has to do with CSS attributes and selectors. I used data attributes in my prototype to make variations of the links and buttons.
 
-In my 2024 Prototype folder I discovered many other projects from February. The other prototypes have to do with color, scrolling behavior, and animation. These projects are working towards redesigning my website landing page.
+I opened more tutorials to study. I also dug into Aria a little more. I am thinking of revisiting the project to add aria labels for the links. From what I have read a simple "ID" is enough of a label for aria and CSS selectors.
 
-I also have a HTML portfolio that I printed as a PDF. I intend to use it for self-promotion and job search. I have more samples to add.
+I discovered many other prototype projects in my 2024 Prototype folder. The other prototypes have to do with color, scrolling behavior, and animation. I plan to combine elements of these projects to redesign parts of my website.
 
-In January I worked on creating a presentation to teach about how to set up an Eleventy project. I was testing the course to decide how to include styles. I need to write a purpose statement to introduce the presentation.
+These prototypes are the components that I use to build websites for clients.
 
-At the end of the March refactor project I published my article. There are two more articles to edit and publish. I want to get these done and out and to pick up the other projects. Now I need to put myself out into the world.
+I am working on creating a presentation to teach how to set up an Eleventy project. I was testing the course to decide how to include styles. I need to write a purpose statement to introduce the presentation. My goal is to keep the presentation to 40 minutes.
+
+Another project is a HTML portfolio that I will print as a PDF. I intend to use it for self-promotion and project search. I have many work samples to add.
+
+At the end of the March typography refactor project I published my article. There are two more articles to edit and publish. I want to get these done and out. I am eager to pick up work on my other projects. I am putting myself out to the world looking for paid projects where I can offer my design expertise.

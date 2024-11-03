@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en_US">
+<head>
+    <title>{{title}}</title>
+    {%include 'meta.njk'%}
+
+{% block fonts %}
+<!--  add font list -->
+    {% include "resume-fonts.njk" %}
+{% endblock %}
+
+{% block styles %}
+<!--  add styles list -->
+    {% include "resume-styles.njk" %}
+{% endblock %}
+
+</head>
+<body>
+    <main> 
+{% block content %}
+<!--  <h1>{{ title }}</h1> -->
+
+    {{content | safe}}
+
+{% endblock %}
+    </main>   
+{#    {%include 'footer.njk'%} #}
+</body>
+
+{# – Need scriptblock #}
+{% block scripts %}
+<!--  add scrips list -->
+    {% include "scripts.njk" %}
+{% endblock %}
+
+</html>

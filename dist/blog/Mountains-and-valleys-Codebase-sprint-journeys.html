@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en_US">
 <head>
-    <title>Mountains and valleys &amp;ndash; Codebase sprint journeys</title>
+    <title>Mountains and Valleys – Codebase sprint journeys</title>
       <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="Content-Language" content="en-us" />
@@ -113,7 +113,7 @@
 </header>
     <main> 
 
-<!--  <h1>Mountains and valleys &amp;ndash; Codebase sprint journeys</h1> -->
+<!--  <h1>Mountains and Valleys – Codebase sprint journeys</h1> -->
 
     
        
@@ -121,7 +121,7 @@
 <div class="container container--narrow flow">
   
     <h1 class="article-title">
-      Mountains and valleys &amp;ndash; Codebase sprint journeys
+      Mountains and Valleys – Codebase sprint journeys
     </h1>
   <p><span class="snippet__meta"></span> <span class="snippet__meta"> Wednesday, March 27, 2024</span></p>
     <figure class="main-article__figure">
@@ -132,29 +132,30 @@
     </figure>
 <h2>Part I: The Refactoring Sprint begins</h2>
 <p>I am now midway through a refactoring project. At this moment the refactor is breaking. I will fix it but this is a good moment to step back and consider where I am at and what I am doing.</p>
-<p>This project started when I wanted to post an article to my WordPress blog. The article already exists on my private Eleventy blog.</p>
-<p>I wrote the article with two definitions within a blockquote. The definitions have a headline label and the definition text.</p>
-<p>The Eleventy blog has its own design system and style sheet. I discovered there are no WordPress styles to put headline labels into a blockquote. This is a small, unusual variation.</p>
-<p>While adding CSS to add styles I found that my font's source has changed. The static Google fonts have become variable fonts.</p>
-<p>This triggered a larger project refactoring my typography. The font change required research and testing. My new deep-dive into typography research is a story unto itself.</p>
-<p>For the moment I am in the implementation stage. I find myself digging into concerns way beyond adding a headline label into a blockquote.</p>
+<p>This project started when I wanted to post an article to my WordPress blog. The article already exists on my Eleventy blog.</p>
+<p>The article includes two definitions within a blockquote. CSS definitions have a headline label and the definition text.</p>
+<p>The Eleventy blog has its own design system and style sheet. I have no CSS styles to put headline labels or definitions into a blockquote in my WordPress theme. This is a small, unusual variation.</p>
+<p>While writing CSS to add styles I found that my font's source has changed. The static Google fonts I use have become variable fonts.</p>
+<p>This triggered a larger project refactoring my typography. The font change required research and testing. The required deep-dive into typography research is a story unto itself.</p>
+<p>For the moment I am in the implementation stage. I am digging into concerns way beyond adding a headline label into a blockquote.</p>
 <h2>Part II: Looking back – How the journey began</h2>
-<p>I initially designed my website in 2004. Recently I looked at The Wayback Machine and found a partial reconstruction of what it used to look like. I built the first iteration of my website in the early days of CSS.</p>
-<p>When I started with web design I liked that I could simply type code. I proudly used SimpleText as I learned to code.</p>
-<p>Some of the original design structure remains. Periodically I redeveloped the website. HTML5 and CSS3 came and responsive design took hold. I refactored.</p>
+<p>I initially designed and built my website in 2004, in the early days of CSS. Recently I looked at The Wayback Machine and found a partial reconstruction of what it used to look like.</p>
+<p>When I started with web design I liked that I could simply type code. I proudly learned to code using SimpleText.</p>
+<p>Some of the design DNA from the original website remains. Periodically I have redeveloped the website. HTML5 and CSS3 came and responsive design took hold. I refactored.</p>
 <p>I switched from using SimpleText to writing code using the SublimeText app. I added SASS to my design process. I refactored.</p>
 <p>I learned to break my website into templates using Gulp and Handlebars. I refactored.</p>
-<p>I added a WordPress blog to the website. The WordPress theme is based on the existing website. I refactored the code base for WordPress using SASS.</p>
-<p>Nowadays I use VSCode, but I also still use TextEdit to code. Often it is easier to open a file from a folder and work.</p>
+<p>I added a WordPress blog to the website. My WordPress theme is based on my website design. I refactored the code base for WordPress using SASS.</p>
+<p>Nowadays I use VSCode, but I also still use TextEdit to code. Often I find it is easier to open a file from a folder and work.</p>
 <p>NPM modules and the Gulp build often need updates for both systems.</p>
 <h2>Part III: Looking where my feet are – Consolidating disparate design systems</h2>
-<p>I have two different front-end build systems. My website is static HTML generated by Handlebars templates. I use a Gulp configuration. The WordPress design has its own style sheet. The style sheets are separate but similar. The WordPress CSS imitates the style and design of the static website.</p>
-<p>But the refactoring of each stylesheet has become out of sync. Currently I am comparing the SASS files between the Handlebars and WordPress systems. I seek to unify the code as much as possible.</p>
+<p>I have two separate front-end design systems. My website is static HTML generated by Handlebars templates. I use a Gulp configuration. The WordPress theme has its own style sheet. The style sheets are separate but similar. The WordPress CSS imitates the style and design of the static website.</p>
+<p>But the refactoring of each stylesheet has become out of sync. I am now comparing the SASS files between the Handlebars and WordPress systems. I seek to unify the code as much as possible.</p>
 <p>Long ago I converted fonts and colors to SASS values. With the advent of CSS custom properties I switched. I converted the SASS values on the website to custom properties.</p>
 <p>Changing fonts has triggered a larger refactoring sprint. Part of this WordPress refactor also includes exchanging SASS values for custom properties. I am comparing the two build systems, working to homogenize the code bases. Later I will also update the fonts in the website codebase.</p>
-<p>This may seem crazy. But it is a great example of how small tasks often lead to finding problems that need correction. Taking care of details and delving into rabbit holes ultimately strengthens the design.</p>
+<p>This may seem crazy. But it is a great example of how small tasks often lead to finding problems that need correction. Taking care of details and delving into
+accumulated technical debt ultimately strengthens the design.</p>
 <h2>Part IV: Looking ahead from the summit</h2>
-<p>Looking ahead, there will be further redesign sprints for both design systems. The WordPress theme is now dated. The theme is built using PHP. The layout and architecture does not serve my needs.</p>
+<p>Looking ahead, there will be further redesign sprints for both design systems. The WordPress theme is now dated. The theme is built using PHP. The layout and architecture is brittle and no longer serves my needs.</p>
 <p>WordPress has changed from strict PHP to a block-design system. Recently I built a custom WordPress theme for a client. Part of that project entailed adding CSS properties and values into a JSON format.</p>
 <p>To modernize my WordPress I will need to convert my CSS into JSON format. How will that affect my intention to unify the two design systems? I do not know. Maybe I will abandon WordPress for Eleventy or another system.</p>
 <p>It is important to keep codebases simple. Today there is a vast wave of change sweeping design and development. I am growing with it.</p>

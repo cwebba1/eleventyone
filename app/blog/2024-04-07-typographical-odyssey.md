@@ -15,7 +15,7 @@ Last night I completed a complex revision of the typography for my WordPress Blo
 
 Revising my stylesheet took over a month. The project started when I wanted to transfer an article from my Eleventy blog to my WordPress blog. A slight typographical oddity caused me to discover that my source fonts had changed.
 
-I used fonts hosted on Google Fonts. I discovered that the Open Sans Google font has changed to be a variable font. I needed to update my fonts.
+I used fonts hosted on Google Fonts. I discovered that the static Open Sans Google font has changed to be a variable font. I needed to update my fonts.
 
 I decided to download the new variable font versions and to host them on my local server.
 
@@ -59,7 +59,7 @@ An older method of font fallbacks is to have a "font-stack" of fonts to load if 
 
 I selected my font-stack based on what fonts are on computers, based on current software. My old 2016 font stack was out of date. I selected a new series of fonts to match the style of my headline font.
 
-My font-stack list starts with a custom property. Then I include my font in case the custom property does not work. Finally I include a list of similar fonts that potentially are on the user's computers.
+My font-stack list starts with a custom property. Then I include my font in case the custom property does not work. Finally I include a list of similar fonts that potentially are on the user's computers. If none of that works the system-ui fonts will load from the reset.
 
 
 ## Rabbit hole – Code debt and synchronized code bases

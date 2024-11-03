@@ -80,11 +80,13 @@ return async () => {
   eleventyConfig.setBrowserSyncConfig({
 		files: './app/css/**/*.css'
 	});
+	eleventyConfig.addWatchTarget("./app/_includes/");
   eleventyConfig.addWatchTarget("./app/scss/");
   eleventyConfig.addPassthroughCopy("./app/css");
 	//eleventyConfig.addWatchTarget("app/css");
     eleventyConfig.addPassthroughCopy("./app/assets");
 	//eleventyConfig.addWatchTarget("app/assets");
+  eleventyConfig.addPassthroughCopy("./app/fonts");
 
   // This changes resource.md output to write to /resource.html
   eleventyConfig.addGlobalData("permalink", () => {
