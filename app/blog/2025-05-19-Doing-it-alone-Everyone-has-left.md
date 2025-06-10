@@ -2,7 +2,7 @@
 title: Doing it alone. Everyone has left.
 author: Craig Webb
 date: 2025-05-19
-tags: ['post', 'featured']
+tags: ['post']
 image: assets/images/wade-webb-grave.jpeg
 imageAlt: The marker at Wade's grave
 description: I buried my brother Wade this spring on Good Friday. It took almost two years to do.
