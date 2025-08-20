@@ -14,8 +14,8 @@ description: I am making lithographs at The Art Students League.
 templateEngineOverride: njk,md
 ---
 <figure class="fig-card left sml">
-<a href="{{root}}assets/images/art-student-league-02.jpeg" title="The Art Student League"><image src="{{root}}assets/images/art-student-league-02.jpeg"  style="aspect-ratio: {{img02}};" alt="The Art Student League"></a>
-<figcaption>The Art Student League in New York City</figcaptions>
+<a href="{{root}}assets/images/art-student-league-02.jpeg" title="The Art Students League"><image src="{{root}}assets/images/art-student-league-02.jpeg"  style="aspect-ratio: {{img02}};" alt="The Art Students League"></a>
+<figcaption>The Art Students League in New York City</figcaptions>
 </figure>
 
 Last week I made a jump into a new (old) direction. I signed up to make lithographs at The Art Students League in New York City.
